@@ -1,0 +1,185 @@
+*
+{
+margin:0px 0px;
+padding:0px 0px;
+}
+.wrapper
+{
+width:100%;
+height:100px;
+
+background:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1)) ;
+background-position:5% 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+//position:fixed;
+//z-index:2;
+overflow:hidden;
+}
+.wrapper ul
+{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-right:100px;
+}
+.wrapper ul li
+{
+list-style-type:none;
+display:inline-block;
+margin-right:40px;
+padding:10px 10px;
+background:grey;
+
+}
+.wrapper ul li a
+{
+text-decoration:none;
+color:white;
+}
+.wrapper ul li a::after
+{
+content:' ';
+background:red;
+width:0%;
+display:block;
+height:3px;
+
+}
+.wrapper ul li a:hover::after
+{
+content:' ';
+background:black;
+width:100%;
+display:block;
+height:3px;
+
+}
+.wrapper h1
+{
+margin-left:100px;
+color:white
+}
+
+.cover
+{
+width:100%;
+height:300px;
+background:linear-gradient(rgba(0,0,0,1),royalblue) ;
+background-position:10% ;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.cover h1,p
+{
+color:white;
+}
+.cover p
+{
+line-height:2;
+}
+
+
+
+
+
+
+.outermost
+{
+
+//margin-top:100px;
+background:white;
+/*ghostwhite*/
+width:100%;
+height:1600px;
+/*border:1px solid black;*/
+}
+
+.layout
+{
+width:90%;
+/*background:rgba(238,238,238,0.1);*/
+background:white;
+height:500px;
+
+}
+
+.package 
+{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:100%;
+height:400px;
+
+background:rgba(0,0,0,0.1);
+font-family:"Gill Sans Extrabold" , sans-serif;
+border-radius:10px;
+}
+.in
+{
+width:20%;
+height:300px;
+margin-bottom:25px;
+}
+.in img
+{
+width:200px;
+height:300px;
+border-radius:10px;
+}
+.in p
+{
+color:black;
+}
+.in h1
+{
+font-size:20px;
+}
+#first
+{
+margin-left:30px;
+margin-bottom:25px;
+}
+.out
+{
+border-top-left-radius:00px;
+border-top-right-radius:00px;
+font-size:45px;
+background:white;
+padding-left:20px;
+color:royalblue;
+font-family:sans-serif;
+}
+.rgba
+{
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:top;
+background:white;
+/*rgba(0,0,0,0.1);*/
+}
+
+
+.footer div
+{
+width:100%;
+
+background:linear-gradient(rgba(0,0,0,1),royalblue);
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+height:200px;
+padding-top:10px;
+padding-bottom:10px;
+margin:0px 0px;
+}
+.footer ul li
+{
+list-style-type:none;
+}
