@@ -76,20 +76,46 @@
           <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
         </label>
       </div>
-      
+      <div class="form-group">
+        <label id="name-label">
+          <p>Last NAME</p>
+          <input type="text" name="lname" id="name" class="form-control" placeholder="Name" required>
+        </label>
+      </div>
       <div class="form-group">
         <label id="email-label">
           <p>EMAIL</p>
           <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
         </label>
       </div>
-      
       <div class="form-group">
         <label id="subject-label">
           <p>SUBJECT</p>
-          <select name="dropdown" id="subject" class="form-control" required>
+          <select name="dropdown" id="subject" class="form-control" action =""required>
             <option value="Booking">
               Booking
+            </option>
+  
+            <option value="Donation">
+              Donation
+            </option>
+  
+            <option value="Question">
+              Question
+            </option>
+  
+          </select>
+        </label>
+      </div>
+      <input type="submit" value="BOOK" id="submit"/>
+      <input type="submit" value="DONATE" id="submit"/>
+      <div class="form-group">
+      </br>
+        <label id="subject-label">
+          <p>SUBJECT</p>
+          <select name="dropdown" id="subject" class="form-control" action ="">
+            <option value="Comment">
+              Comment
             </option>
   
             <option value="Suggestion">
@@ -110,8 +136,8 @@
           <textarea name="comment" id="comments"></textarea>
         </label>
       </div>
-      
       <input type="submit" value="SUBMIT" id="submit"/>
+      <input type="submit" value="RESET" id="submit"/>
       
     </form>
   </section>
