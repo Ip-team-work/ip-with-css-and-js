@@ -1,145 +1,322 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tour bool.css">
-    <title>Document</title>
-</head>
-<body>
-<header id="header">
-    <div class="wrapper">
-      <nav id="nav-bar">
-        <ul>
-          <li class="menu"><a class="nav-link" href="#">HOME</a></li>
-          <li class="menu"><a class="nav-link" href="#Pricing">PRICING</a></li>
-        <a class="nav-link" href="#Contact"><button>BOOK NOW</button></a>
-        </ul>
-      </nav>
-    </div>
-    <div class="image" id="background-img"></div>
-    
-   <a href="#Contact"><div id="center"><button href="#Contact">BOOK NOW</button></div>
-  </header>
-  <section id="Pricing">
-    <h2 class="about">PRICING</h2>
-    <h3 class="quote">Check out our amazing packages!</h3>
-    
-    <div class="pricing-table">
-      <div class="pricing-card">
-        <h3 class="pricing-card-header">BASIC</h3>
-        <h2 class="price">$499</h2>
-        <ul>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-        </ul>
-        <a href="#Contact" class="order-btn">ORDER NOW</a>
-      </div>
-      
-      <div class="pricing-card">
-        <h3 class="pricing-card-header">PREMIUM</h3>
-        <h2 class="price">$799</h2>
-        <ul>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-        </ul>
-        <a href="#Contact" class="order-btn">ORDER NOW</a>
-      </div>
-      
-      <div class="pricing-card">
-        <h3 class="pricing-card-header">DELUXE</h3>
-        <h2 class="price">$999</h2>
-        <ul>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-        </ul>
-        <a href="#Contact" class="order-btn">ORDER NOW</a>
-      </div>
-    </div>
-    
-  </section>
-  <section id="Contact">
-    <h2 class="about">Payment Method</h2>
-    <h3 class="quote">you can pay here the fee!</h3>
-    
-    <form id="form" action="https://www.cbeib.com.et/ARCIB-4/servlet/BrowserServlet">
-      <div class="form-group">
-        <label id="name-label">
-          <p>NAME</p>
-          <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
-        </label>
-      </div>
-      <div class="form-group">
-        <label id="name-label">
-          <p>Last NAME</p>
-          <input type="text" name="lname" id="name" class="form-control" placeholder="Name" required>
-        </label>
-      </div>
-      <div class="form-group">
-        <label id="email-label">
-          <p>EMAIL</p>
-          <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-        </label>
-      </div>
-      <div class="form-group">
-        <label id="subject-label">
-          <p>SUBJECT</p>
-          <select name="dropdown" id="subject" class="form-control" action =""required>
-            <option value="Booking">
-              Booking
-            </option>
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+
+.content
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+section{
+  padding-top: 45px;
+  height: 100%;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 650px){
+  section{
+    margin-bottom: 150px;
+  }
+}
+#background-img{
+  height: 100vh;
+  margin-bottom:0px;
+  position: relative;
+}
+
+header .image{
+  background-image:url('resource/images/pexels-pixabay-36717.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#center
+{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 5%);
+}
+
+#center button
+{
+  background-color: #1588A0;
+  color: white;
+  padding: 10px 35px;
+  margin: 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: oswald;
+  letter-spacing: 2px;
+}
+li, a, button
+{
+  font-family: "Open Sans Condensed";
+  font-size: 14px;
+  color: #EDF0F1;
+  text-decoration: none;
+}
+.wrapper
+
+{
+  display: flex;
+  background-color: rgba(200, 210, 222, 1);
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.menu
+{
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+li a
+{
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #454A4D;
+}
+
+li a:hover
+{
+  color: #007891;
+}
+
+button
+{
+  padding: 5px 15px;
+  background-color: rgba(0,136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover
+{
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+@media (max-width: 650px)
+{
+  .wrapper
+  {
+    background-color: rgba(200, 210, 222, 1);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+}
+
+
+@media (max-width: 650px){
+  #header-img{
+    margin-top: 15px;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px){
+  ul button{
+    display: none;
+  }
+}
+.about{
+  font-family: Oswald;
+  font-weight: bold;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.quote
+{
+  font-family: Quicksand;
+  margin-top: -3px;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.p1
+{
+  padding-top: 10px;
+}
+
+.p1 p
+{
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto 20px;
+  font-family: 'Open Sans Condensed';
+}
+
+@media(max-width: 650px)
+{
   
-            <option value="Donation">
-              Donation
-            </option>
+  .quote{
+    padding: 10px;
+  }
   
-            <option value="Question">
-              Question
-            </option>
-  
-          </select>
-        </label>
-      </div>
-      <input type="submit" value="BOOK" id="submit"/>
-      <input type="submit" value="DONATE" id="submit"/>
-      <div class="form-group">
-      </br>
-        <label id="subject-label">
-          <p>SUBJECT</p>
-          <select name="dropdown" id="subject" class="form-control" action ="">
-            <option value="Comment">
-              Comment
-            </option>
-  
-            <option value="Suggestion">
-              Suggestion
-            </option>
-  
-            <option value="Question">
-              Question
-            </option>
-  
-          </select>
-        </label>
-      </div>
-      
-      <div class="form-group">
-        <label id="message-label">
-          <p>YOUR MESSAGE</p>
-          <textarea name="comment" id="comments"></textarea>
-        </label>
-      </div>
-      <input type="submit" value="SUBMIT" id="submit"/>
-      <input type="submit" value="RESET" id="submit"/>
-      
-    </form>
-  </section>
-</body>
-</html>
+  .p1{
+    padding: 0px 10px;
+  }
+}
+.pricing-table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: min(1600px, 100%);
+  margin: auto;
+}
+
+.pricing-card{
+  flex: 1;
+  max-width: 360px;
+  background-color: white;
+  border: 1px solid #D3D3D3;
+  margin: 20px 10px;
+  text-align: center;
+  overflow: hidden;
+  color: black;
+  transition: 0.3s linear;
+}
+
+.pricing-card-header{
+  background-color: #1588A0;
+  display: inline-block;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-family: oswald;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 15px;
+  transition: 0.4s linear;
+}
+
+.pricing-card:hover .pricing-card-header{
+  box-shadow: 0 0 0 26em #1588A0;
+}
+
+.price
+{
+  font-size: 50px;
+  color: black;
+  font-family: 'Open Sans Condensed';
+  font-weight: bold;
+  margin: 40px 0;
+  transition: 0.2s linear;
+}
+
+.pricing-card:hover, .pricing-card:hover .price, .pricing-card:hover li
+{
+  transition: 1s;
+  color: white;
+}
+
+.pricing-card li
+{
+  font-family: Quicksand;
+  font-size: 16px;
+  padding: 10px 0;
+  list-style: none;
+  color: black;
+}
+
+.order-btn
+{
+  display: inline-block;
+  margin: 80px 0 40px 0;
+  border: 2px solid #1588A0;
+  color: #1588A0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 18px 40px;
+  border-radius: 8px;
+  transition: 0.3s linear;
+}
+
+.order-btn:hover
+{
+  background-color: #034754;
+  border: 2px solid #034754;
+  color: white;
+}
+
+@media (max-width: 650px){
+  .pricing-card
+  {
+    flex: 50%; 
+  }
+}
+.contact{
+  font-family: Oswald;
+  font-weight: bold;
+  padding-top: 40px;
+  text-align: center;
+}
+
+form{
+  margin: 10px auto;
+  max-width: 400px;
+  padding: 20px 12px 10px 20px;
+}
+
+form label{
+  margin:0 0 3px 0;
+  padding:0px;
+  padding-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+form label p{
+  font-family: 'Open Sans Condensed';
+  text-align: left;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.form-control{
+  box-sizing: border-box;
+  border:1px solid #BEBEBE;
+  padding: 7px;
+  margin: 0px;
+  width: 100%;
+}
+
+textarea{
+  min-height: 120px;
+  width: 100%;
+  padding: 5px;
+  resize: vertical;
+  display: inline-block;
+}
+
+#submit{
+  background-color: #1588A0;
+  font-family: oswald;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+}
