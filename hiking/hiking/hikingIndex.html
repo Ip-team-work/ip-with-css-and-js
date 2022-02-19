@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="hikingcss/hikingIndex.css">
+    <link rel="stylesheet" href="hikingcss/style.css">
+    <title>Hiking</title>
+</head>
+
+<body>
+    <!-- header starts here -->
+    <header id="nav">
+        <img src="image/compLogo.png" alt="company logo" class="logo">
+        <a href="#" class="ComName"><span>T</span>ravel</a>
+        <nav class="navBar" id="navB">
+            <a href="#" class = "links">Home</a>
+            <a href="#" class = "links">book</a>
+            <a href="#" class = "links">packages</a>
+            <a href="#" class = "links">services</a>
+            <a href="#" class = "links">gallery</a>
+            <a href="#" class = "links">review</a>
+            <a href="#" class = "links">contact</a>
+        </nav>
+      
+
+        <div class="icon">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn" onclick="toggleFun()"></i>
+
+        </div>
+        <i class="fas fa-bars" id="menu_bar" onclick="mainMenuFun()"></i>
+        <form action="" class="search">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <!-- header ends here -->
+
+    <!-- login form starts here -->
+
+    <div class="login-form" id="log">
+
+        <i class="fas fa-times" id="form-close" onclick="toggleFun()"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="email">
+            <input type="password" class="box" placeholder="password">
+            <input type="submit" class="btn" value="login now">
+            <input type="checkbox" id="remember" placeholder="email">
+            <label for="remember">remember me</label>
+            <p>forget password ? <a href="#"> click here</a></p>
+            <p>dont have an acount ? <a href="#"> register now</a></p>
+        </form>
+    </div>
+
+
+
+    <!-- login form ends here -->
+
+
+
+
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div id="main">
+            <div id="inner">
+                <h1>Best Travel Agency <br>in <br>Ethiopia</h1>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem facere<br> quos, ratione pariatur eumeos omnis ducimus voluptatem, cumque nihil repellendus?
+                    <br>
+                    Molestiae dicta error aspernatur id consectetur,magni sint ipsum.
+
+                </p>
+                <p>
+                    <a href="#" class="visit-usbtn">Visit us</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- home section end -->
+    <!-- booking section -->
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <!-- <img src="image/aboutus.png" alt=""> -->
+                <form action="">
+                    <div class="inputBox">
+                        <h3>where to go</h3>
+                        <input type="text" placeholder="place name">
+                    </div>
+                    <div class="inputBox">
+                        <h3>how many</h3>
+                        <input type="number" placeholder="number of guests">
+                    </div>
+                    <div class="inputBox">
+                        <h3>arrivals</h3>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>leaving</h3>
+                        <input type="date">
+                    </div>
+                    <input type="submit" class="btn" value="book now">
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- hiking section -->
+
+    <section class="hiking" id="hiking">
+        <h1 class="heading">
+            <span>h</span>
+            <span>i</span>
+            <span>k</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+        </h1>
+        
+    </section>
+
+   
+        <!-- <div class="hikingTours">
+            <div class="hikingTours3">
+            <div class="hikingTrend">
+                <div class="semeinHike">
+                    <img id = "img" src="image/img_1.jpg"> 
+                </div>
+               
+                    <h3>semein mountains</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Distinctio eum, nemo, quia commodi sapiente non </p>
+            </div>
+    
+            <div class="hikingTrend">
+                <img src="image/img_1.jpg">
+                <h3>bale mountain</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Distinctio eum, nemo, quia commodi sapiente non </p>
+            </div>
+            <div class="hikingTrend">
+                <img src="image/img_1.jpg">
+                <h3>blue nile</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Distinctio eum, nemo, quia commodi sapiente non </p>
+            </div>
+    
+        </div>
+        <div class="hikingTours3">
+            <div class="hikingTrend">
+                <img id = "img" src="image/img_1.jpg">
+                <h3>geech</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Distinctio eum, nemo, quia commodi sapiente non </p>
+            </div>
+    
+            <div class="hikingTrend">
+                <img src="image/img_1.jpg">
+                <h3>entoto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Distinctio eum, nemo, quia commodi sapiente non </p>
+            </div>
+            <div class="hikingTrend">
+                <img src="image/img_1.jpg">
+                <h3>empty</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Distinctio eum, nemo, quia commodi sapiente non </p>
+            </div>
+    
+        </div>
+    
+        </div> -->
+   
+
+   
+
+
+    <footer>
+        <div class="Footer-container wave ">
+            <div class="info">
+                <ul>
+                    <li>
+                        Terms and conditions
+                    </li>
+                    <li>
+                        Private policy
+                    </li>
+                    <li>
+                        Cookies Policy
+                    </li>
+                    <li>
+                        Manage Cookies
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact us </h3>
+                <ul>
+                    <li>
+                        phone
+                    </li>
+                    <li>
+                        email
+                    </li>
+                    <li>
+                        address
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <h5>Follow us on</h5>
+                <a href="#"><i id="social" class=" fab fa-facebook-f"></i></a>
+                <a href="#"><i id="social" class=" fab fa-instagram"></i></a>
+                <a href="#"><i id="social" class=" fab fa-youtube"></i></a>
+                <a href="#"><i id="social" class=" fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/hikeScript.js"></script>
+    <script src="js/usericon.js"></script>
+</body>
+
+</html>
