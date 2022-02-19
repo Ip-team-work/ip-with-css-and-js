@@ -1,0 +1,118 @@
+li{
+    list-style-type:none;
+}
+nav{
+    position:sticky; 
+    top:0;
+    display:flex;
+    z-index:20;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgb(83, 83, 83,.8);
+    height:8vh;
+    width:100vw;
+    transition: all .8s ease-in-out;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
+.navadd{
+    flex-direction: column;
+    height:15vh;
+    background-color: rgb(83, 83, 83,.0);
+    background-image: url('../image/places/1266827.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in .5s;
+    
+}
+.bisrat{
+    position: absolute;
+    width: 378px;
+    height: 494px;
+    left: 742px;
+    top: 247px;
+
+    background: url("../image/places/1266827.jpg"), rgb(180, 52, 52);
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.47);
+    background-size: cover;
+}
+.logo{
+   font-size: 1.6rem;
+   color:rgb(255, 255, 255);
+   font-weight: bold;
+   
+}
+.marginauto{
+    margin:auto;
+}
+.nav-links{
+    
+    display: flex;
+    justify-content: space-around;
+    width:40%;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    text-transform:uppercase;
+    transition: all ease-in 1s;
+    color:rgb(255, 255, 255);
+}
+.nav-image{
+    position: relative;
+    width:100vw;
+    height:10vh;
+    background-image: url('../image/places/1266827.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+.nav-image2{
+    height: 100vh;
+    background-image: url('../image/Hotels/hotelBackground.jpg');
+}
+.side-bar{
+    position:fixed; 
+    top:40%;
+    width:3vw;
+    margin: 10px;
+    padding:5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+    border-radius: 3px;
+    opacity: 0.3;
+    z-index:50;
+    animation: frontface 3s ease-in-out;
+}
+.side-bar i{
+    color:aqua;
+}
+.side-bar:hover{
+    opacity:1;
+    transition: all ease-in-out 0.3s;
+}
+.side-bar i:hover{
+    color:white;
+    transition: ease-in-out 0.3s;
+    font-size: 1.8rem;
+}
+
+
+.social{
+    padding:1rem;
+    
+}
+.fab{
+    margin:10px;
+}
+.burger{
+    display: none;
+}
+.burger div{
+    width:25px;
+    height: 3px;
+    background-color: rgb(233, 233, 233);
+    margin:5px;
+    
+}

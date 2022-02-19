@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/all.css">
+    <link rel="stylesheet" href="./resources/css/slide.css">
+    
+</head>
+<body>
+    <!-- <div class="nav-image"> </div> -->  <!-- image above the nav bar --> 
+
+        <nav id="navbar">
+            
+            <!-- nav top -->
+                <div class="logo"  >
+                    TOUR AND TRAVEL
+                    <!-- <img src="" alt="logo"> -->
+                </div>
+                <ul class="nav-links" id="menu" >
+                    <li>HOME</li>
+                    <li>Flight</li>
+                    <li>Tour Packages</li>
+                    <li> HOTEL</li>
+                    <li>ABOUT US </li>
+                </ul>
+            <!-- x ----nav top x------>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search ">
+                <a href="#" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </a>
+            
+            </div>
+
+        </nav>
+    
+     
+
+    <!-- nav sidebar -->
+        <div class="side-bar social">
+            
+            <a href="#"><i id="social" class=" fab fa-facebook-f"></i></a>
+            <a href="#"><i id="social" class=" fab fa-instagram"></i></a>
+            <a href="#"><i id="social" class=" fab fa-youtube"></i></a>
+            <a href="#"><i id="social" class=" fab fa-twitter"></i></a>
+        </div>
+    <!-- x-----nav sidebar-----x -->
+
+    <div class="spacer wave front-container">
+        <div class="front">
+            
+            <div class="front-header">
+                <h1>ABUGIDA, <br>TOUR AND TRAVEL</h1>
+            </div>
+            
+            
+        </div>
+        
+        <div class="greycard"></div>
+
+        <div class="galleryContainer">
+
+                <div class="slideShowContainer">
+                    <div id="playPause" onclick="playPauseSlides()"></div>
+                    <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+                    <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+                    <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+                    <div class="imageHolder">
+                        <img src="./resources/image/places/Ethiopia__0002_Ethiopia-Waterfalls.jpg">1366X768
+                        <p class="captionText">Caption Text-01</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="./resources/image/places/Gondar-Ethiopia-africa-43204861-916-516.jpg">
+                        <p class="captionText">Caption Text-02</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="./resources/image/places/nature-landscape-clouds-ethiopia-wallpaper-preview.jpg">
+                        <p class="captionText">Caption Text-03</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="./resources/image/places/lalibela.jpg">
+                        <p class="captionText">Caption Text-04</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="./resources/image/places/ETH_2015_DK_052.jpg">
+                        <p class="captionText">Caption Text-04</p>
+                    </div>
+                </div>
+                
+            <div id="dotsContainer"></div>
+        </div>
+        
+    </div>
+
+       <main class="main">
+            <div class="contain">
+                <!-- Trending places -->
+                <div class="trending">
+                    <h1>Trending Places</h1>
+                    <div class="trend1">
+                        <div class="side-img" id="img1" >
+                            <!-- <img  src="./resources/image/10-Ras-Dashen-Simien-Mountains-Ethiopia-monkey.jpg" alt=""> -->
+                        </div>
+                        <div class="description">
+                            <h3>Semien Mountains</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque, ea eveniet magnam alias beatae iste sed hic, suscipit inventore facere velit iure laboriosam. Distinctio fuga accusamus accusantium tenetur vel?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque, ea eveniet magnam alias beatae iste sed hic, suscipit inventore facere velit iure laboriosam. Distinctio fuga accusamus accusantium tenetur vel?</p>
+
+                            <button class="btnBook">Book Now</button>
+                        </div>
+
+                    </div>
+                
+                    <div class="trend1">
+                        <div class="side-img" id="img2">
+                            <!-- <img  src="./resources/image/10-Ras-Dashen-Simien-Mountains-Ethiopia-monkey.jpg" alt=""> -->
+                        </div>
+                        <div class="description">
+                            <h3>Semien Mountains</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque, ea eveniet magnam alias beatae iste sed hic, suscipit inventore facere velit iure laboriosam. Distinctio fuga accusamus accusantium tenetur vel?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque, ea eveniet magnam alias beatae iste sed hic, suscipit inventore facere velit iure laboriosam. Distinctio fuga accusamus accusantium tenetur vel?</p>
+
+                            <button>Book Now</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                    
+                <!-- trending places End -->
+                
+
+                <!-- hiking places -->
+                
+                    
+                    <div class="trending">
+                        <h1>Hiking Places</h1>
+                        <div class="trend1">
+                            <div class="side-img" id="img3">
+                                <!-- <img  src="./resources/image/10-Ras-Dashen-Simien-Mountains-Ethiopia-monkey.jpg" alt=""> -->
+                            </div>
+                            <div class="description">
+                                <h3>Semien Mountains</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque, ea eveniet magnam alias beatae iste sed hic, suscipit inventore facere velit iure laboriosam. Distinctio fuga accusamus accusantium tenetur vel?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque, ea eveniet magnam alias beatae iste sed hic, suscipit inventore facere velit iure laboriosam. Distinctio fuga accusamus accusantium tenetur vel?</p>
+    
+                                <button>Book Now</button>
+                            </div>
+    
+                        </div>
+
+                        
+                            
+                            <div class="trend1">
+                                <div class="side-img" id="img4">
+                                    <!-- <img  src="./resources/image/10-Ras-Dashen-Simien-Mountains-Ethiopia-monkey.jpg" alt=""> -->
+                                </div>
+                                <div class="description">
+                                    <h3>Semien Mountains</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque, ea eveniet magnam alias beatae iste sed hic, suscipit inventore facere velit iure laboriosam. Distinctio fuga accusamus accusantium tenetur vel?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque, ea eveniet magnam alias beatae iste sed hic, suscipit inventore facere velit iure laboriosam. Distinctio fuga accusamus accusantium tenetur vel?</p>
+                                    <button>Book Now</button>
+                                </div>
+        
+                            </div>
+                        
+
+                <!-- hiking places end-->
+               
+                </div>
+            </div>
+            
+            <div class="advert">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eaque saepe repudiandae maiores rerum veritatis deserunt facere! Fugiat nulla iste commodi itaque nostrum, dolore natus! Assumenda repellendus nihil quibusdam rerum.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eaque saepe repudiandae maiores rerum veritatis deserunt facere! Fugiat nulla iste commodi itaque nostrum, dolore natus! Assumenda repellendus nihil quibusdam rerum.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eaque saepe repudiandae maiores rerum veritatis deserunt facere! Fugiat nulla iste commodi itaque nostrum, dolore natus! Assumenda repellendus nihil quibusdam rerum.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eaque saepe repudiandae maiores rerum veritatis deserunt facere! Fugiat nulla iste commodi itaque nostrum, dolore natus! Assumenda repellendus nihil quibusdam rerum.</p>
+            </div>
+            
+       </main>
+    
+    <footer>
+    <div class="Footer-container wave ">
+            <div class="info">
+                <ul>
+                    <li>
+                        Terms and conditions
+                    </li>
+                    <li>
+                        Private policy
+                    </li>
+                    <li>
+                        Cookies Policy
+                    </li>
+                    <li>
+                        Manage Cookies
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact us </h3>
+                <ul>
+                    <li>
+                        phone
+                    </li>
+                    <li>
+                        email
+                    </li>
+                    <li>
+                        address
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <h5>Follow us on</h5>
+                    <a href="#"><i id="social" class=" fab fa-facebook-f"></i></a>
+                    <a href="#"><i id="social" class=" fab fa-instagram"></i></a>
+                    <a href="#"><i id="social" class=" fab fa-youtube"></i></a>
+                    <a href="#"><i id="social" class=" fab fa-twitter"></i></a>
+            </div>
+    </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/49cca55e70.js" crossorigin="anonymous"></script>
+    <script src="resources/js/app.js"></script>
+    <script src="resources/js/slide.js"></script>
+
+</body>
+</html>
