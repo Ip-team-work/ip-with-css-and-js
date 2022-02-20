@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src = "scriptFamily.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="tour bool.css">
+  <title>Abugida Tour And Travel</title>
+</head>
+<body>
+<header id="header">
+    <div class="wrapper">
+      <nav id="nav-bar">
+        <ul>
+          <li class="menu"><a class="nav-link" href="#">HOME</a></li>
+          <li class="menu"><a class="nav-link" href="#Pricing">PRICING</a></li>
+        <a class="nav-link" href="#Contact"><button>BOOK NOW</button></a>
+        </ul>
+      </nav>
+    </div>
+    <div class="image" id="background-img"></div>
+    
+   <a href="#Contact"><div id="center"><button href="#Contact">BOOK NOW</button></div>
+  </header>
+  <section id="Pricing">
+    <h2 class="about">PRICING</h2>
+    <h3 class="quote">Check out our amazing packages!</h3>
+    
+    <div class="pricing-table">
+      <div class="pricing-card">
+        <h3 class="pricing-card-header">BASIC</h3>
+        <h2 class="price">$499</h2>
+        <ul>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+        </ul>
+        <a href="#Contact" class="order-btn">ORDER NOW</a>
+      </div>
+      
+      <div class="pricing-card">
+        <h3 class="pricing-card-header">PREMIUM</h3>
+        <h2 class="price">$799</h2>
+        <ul>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+        </ul>
+        <a href="#Contact" class="order-btn">ORDER NOW</a>
+      </div>
+      
+      <div class="pricing-card">
+        <h3 class="pricing-card-header">DELUXE</h3>
+        <h2 class="price">$999</h2>
+        <ul>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+        </ul>
+        <a href="#Contact" class="order-btn">ORDER NOW</a>
+      </div>
+    </div>
+    
+  </section>
+  <section id="Contact">
+    <h2 class="about">Payment Method</h2>
+    <h3 class="quote">you can pay here the fee!</h3>
+    
+    <form id="form" action="https://www.cbeib.com.et/ARCIB-4/servlet/BrowserServlet" method="post">
+      <div class="form-group">
+        <label id="name-label">
+          <p>NAME</p>
+          <input type="text" name="name" id="first_name" class="form-control" placeholder="Name" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="name-label">
+          <p>Last NAME</p>
+          <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Name" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="email-label">
+          <p>EMAIL</p>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">
+          <p>Password</p>
+          <input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="email-label">
+          <p>Confirm password</p>
+          <input type="password" name="pass" id="confirm_pass" class="form-control" placeholder="confirm Password" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="subject-label">
+          <p>SUBJECT</p>
+          <select name="dropdown" id="subject" class="form-control" action =""required>
+            <option value="Booking">
+              Booking
+            </option>
+  
+            <option value="Donation">
+              Donation
+            </option>
+
+          </select>
+        </label>
+      </div>
+      <input type="submit" value="BOOK" id="submit"/>
+      <input type="submit" value="DONATE" id="submit"/>
+    </form>
+    <form action="#">
+      <div class="form-group">
+      </br>
+        <label id="subject-label">
+          <p>SUBJECT</p>
+          <select name="dropdown" id="subject" class="form-control" action ="">
+            <option value="Comment">
+              Comment
+            </option>
+  
+            <option value="Suggestion">
+              Suggestion
+            </option>
+  
+            <option value="Question">
+              Question
+            </option>
+  
+          </select>
+        </label>
+      </div>
+      
+      <div class="form-group">
+        <label id="message-label">
+          <p>YOUR MESSAGE</p>
+          <textarea name="comment" id="comments"></textarea>
+        </label>
+      </div>
+      <input type="submit" value="SUBMIT" id="submit"/>
+      <input type="submit" value="RESET" id="submit"/>
+      
+    </form>
+  </section>
+</body>
+</html>

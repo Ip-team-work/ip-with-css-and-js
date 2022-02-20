@@ -1,0 +1,211 @@
+.container 
+{
+    position: relative;
+}
+  
+  .image 
+  {
+    display:inline-block;
+    width: 30%;
+    height: auto;
+    padding:20px;
+    background-image: url("resource/images/pexels-rafael-guajardo-604684.jpg");
+  }
+  
+  .overlay 
+  {
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 30%;
+    height:0;
+    transition: .5s ease;
+    float:right
+  }
+  
+  .container:hover .overlay 
+  {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text 
+  {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text-block a
+  {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: red;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .text-block:hover a
+  {
+      background-color: rgba(0, 0, 0,1);
+      background-size: 200px;
+      color:blue;
+      width:20%;
+  }
+
+  <div class="row">
+        <div class="column">
+          <img src="resource/images/pexels-pixabay-210186.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="resource/images/sergey-pesterev-_VqyrvQi6do-unsplash.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="resource/images/pexels-pixabay-371589.jpg" alt="Mountains" style="width:100%">
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="site-wrapper light-blue">
+	<div class="site-wrapper-inner align-top">
+		<div class="container-standards">
+			<div class="d-sm-block">
+				<div class="row my-row">
+
+					<!-- [start] blog -->
+					<div class="col-sm-12 col-md-6 col-lg-7 no-padding">
+						<div class="site-wrapper-content-title">
+							<h1 class="title">Luxury Travel Blog</h1>
+						</div>
+						
+						<!--  Blog 1 -->
+						<div class="row my-row blog-row">
+							<div class="col-sm-6 blog-col">
+								<div class="blog-picture">
+									<img data-src="https://cf.luxurylink.com/homepage/thumbs/couple-deals.jpg" class="lazy loaded" alt="Current Hotel Deals" src="https://cf.luxurylink.com/homepage/thumbs/couple-deals.jpg" data-was-processed="true">
+								</div>
+							</div>
+							<div class="col-sm-6 my-col">
+								<div class="blog-div">
+									<h4>Current Hotel Deals</h4>
+									<p>Free nights, full breakfasts, spa credits and more. See all the 5-star hotel deals currently available on Luxury Link.</p>
+									<a data-clicktrack="homepage-blogs-hotel-deals" href="/blog/hotels/current-hotel-deals/" id="button_blog" class="btn btn-lg btn-blog" target="_blank">Read more</a>
+								</div>
+							</div>
+						</div>
+						
+						<!--  Blog 2 -->
+						<div class="row my-row blog-row">
+							<div class="col-sm-6 blog-col">
+								<div class="blog-picture">
+									<img data-src="https://cf.luxurylink.com/homepage/thumbs/jet-couple.jpg" class="lazy loaded" alt="Flying on a private jet made easy" src="https://cf.luxurylink.com/homepage/thumbs/jet-couple.jpg" data-was-processed="true">
+								</div>
+							</div>
+							<div class="col-sm-6 my-col">
+								<div class="blog-div">
+									<h4>The Do’s and Don’ts When Flying on a Private Jet</h4>
+									<p>Traveling on a private jet can feel a tad intimidating for first-timers. Read our definitive guide and you'll feel right at home.</p>
+									<a data-clicktrack="homepage-blogs-flying-private" href="/blog/guides/the-dos-and-donts-when-flying-on-a-private-jet/" id="button_blog" class="btn btn-lg btn-blog" target="_blank">Read more</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					 <!-- [end] blog  -->
+
+					<!-- row column -->
+					<div class="col-sm-12 col-md-1 col-lg-1 no-padding">&nbsp;</div>
+
+
+<!-- [start] ### NO-ADS video - comment out when we have ads ### -->
+
+					<div class="col-sm-12 col-md-5 col-lg-4 no-padding">
+						<div class="site-wrapper-content-title">
+							<h1 class="title">Videos</h1>
+						</div>
+							<!--  Video 1 -->
+							<div class="row my-row video-change-bk">
+								<div class="col no-padding">
+									<div class="video-text d-block d-md-none">
+										<h4>Most Unusual Hotels</h4>
+									</div>
+									<div class="video-picture">
+										<a data-clicktrack="homepage-videos_unusual-hotels" href="/blog/video/most-unusual-hotels/" id="video" target="_blank">
+											<img data-src="https://cf.luxurylink.com/homepage/thumbs/skylodge-thumb.jpg" alt="Unusual Hotels Video" class="lazy loaded" src="https://cf.luxurylink.com/homepage/thumbs/skylodge-thumb.jpg" data-was-processed="true">
+											<div class="video-icon"><i class="far fa-play-circle fa-4x"></i></div>
+											<div class="video-overlay d-none d-md-block"><h4>Most Unusual Hotels</h4></div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+<!-- 
+							<div class="row my-row video-change-bk">
+								<div class="col no-padding">
+									<div class="video-text d-block d-md-none">
+										<h4>Overwater Bungalow Tours</h4>
+									</div>
+									<div class="video-picture">
+										<a data-clicktrack="homepage-videos_bungalow-tour" href="/blog/video/overwater-bungalow-tour-playlist/" id="video"  target="_blank">
+											<img data-src="https://cf.luxurylink.com/homepage/thumbs/bungalow-thumb.jpg" alt="Overwater Bungalow Video" class="lazy">
+											<div class="video-icon"><i class="far fa-play-circle fa-4x"></i></div>
+											<div class="video-overlay d-none d-md-block"><h4>Overwater Bungalow Tours</h4></div>
+										</a>
+									</div>
+								</div>
+							</div>
+ -->
+
+							<!--  Video 2 -->
+							<div class="row my-row video-change-bk">
+								<div class="col no-padding">
+									<div class="video-text d-block d-md-none">
+										<h4>Most Expensive Hotel Rooms</h4>
+									</div>
+									<div class="video-picture">
+										<a data-clicktrack="homepage-videos_expensive-rooms" href="/blog/video/the-most-expensive-hotel-rooms-part-1/" id="video" target="_blank"><img data-src="https://cf.luxurylink.com/homepage/thumbs/ritz-thumb.jpg" alt="Most Expensive Hotel Rooms Video" class="lazy loaded" src="https://cf.luxurylink.com/homepage/thumbs/ritz-thumb.jpg" data-was-processed="true">
+											<div class="video-icon"><i class="far fa-play-circle fa-4x"></i></div>
+											<div class="video-overlay d-none d-md-block"><h4>Most Expensive Hotel Rooms</h4></div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+
+<!-- 
+							<div class="row my-row video-change-bk">
+								<div class="col no-padding">
+									<div class="video-text d-block d-md-none">
+										<h4>Private Islands for Sale</h4>
+									</div>
+									<div class="video-picture">
+										<a data-clicktrack="homepage-videos_private-islands" href="/blog/video/private-islands-for-sale/" id="video" target="_blank"><img data-src="https://cf.luxurylink.com/homepage/thumbs/private-island-thumb.jpg" alt="Private Islands for Sale video" class="lazy">
+											<div class="video-icon"><i class="far fa-play-circle fa-4x"></i></div>
+											<div class="video-overlay d-none d-md-block"><h4>Private Islands for Sale</h4></div>
+										</a>
+									</div>
+								</div>
+							</div>
+ -->
+					</div>
+<!-- [end] ### no-ads video ### -->
+
+ 
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
