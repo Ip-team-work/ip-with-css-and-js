@@ -1,18 +1,14 @@
-
-
-
-
 html {
     scroll-behavior: smooth;
   }
-  .checker{
-      height:300vh;
-  }
+  
   * {
     margin: 0;
     padding: 0;
   }
-  
+  .checker{
+    height: 120vh;
+  }
   body {
     width: auto;
     height: auto;
@@ -48,7 +44,6 @@ html {
     margin: auto;
     font-size: 19px;
     min-height: 100px;
-    transition: all ease .9s;
   }
   
   
@@ -58,9 +53,8 @@ html {
   /* Normal Header */
   
   .active-header {
-    background-color: rgb(255, 255, 255,.9);
+    background-color: white;
     color: black;
-    transition: all ease .9s;
   }
   
   .menu-link {
@@ -132,27 +126,9 @@ html {
   
   
   
-  
-  
-  /* ----- Hero Header CSS -----
-  
-  Tags included:
-  
-  1. hero-header - main container of the Hero
-  
-  2. hero-content - the container of the title and description within the hero Section
-  
-  3. hero-title - the title within the hero section
-  
-  4. hero-text - the text within the hero section
-  
-  5. hero-button - the button within the hero section
-  
-  */
-  
   #hero-header {
     /* width: 100vw; */
-    height: 100vh;
+    height: 10vh;
     box-shadow: 3px 3px 2px #bebebe;
   
     /* hero-header flexbox */
@@ -165,7 +141,7 @@ html {
     color: white;
   
     /* Background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url(../resources/image/places/ETH_2015_DK_052.jpg);
+    background: linear-gradient(rgb(58, 58, 58),rgba(0, 0, 0, 0.5));
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -197,9 +173,6 @@ html {
   }
   
 
-  
-  
-  
   
   
   
@@ -320,7 +293,6 @@ html {
       color: white;
   
       /* Background image */
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../resources/image/places/ETH_2015_DK_052.jpg);
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -351,11 +323,10 @@ html {
       cursor: pointer;
     }
   
-
-  
   }
-  
-  
+
+
+
 
   
   @media only screen and (min-width : 860px) and (max-width : 1280px) {
@@ -444,7 +415,7 @@ html {
   
     #hero-header {
       width: auto;
-      height: 120vh;
+      height: 100vh;
   
       /* hero-header flexbox */
       display: flex;
@@ -457,7 +428,7 @@ html {
       color: white;
   
       /* Background image */
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../resources/image/places/ETH_2015_DK_052.jpg);
+     
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -487,6 +458,18 @@ html {
     #hero-button:hover {
       cursor: pointer;
     }
+  
+  
+  
+    
+  
+  
+  
+  
+    
+  
+  
+  
   
 }
   

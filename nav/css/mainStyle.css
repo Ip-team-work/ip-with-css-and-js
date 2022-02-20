@@ -1,0 +1,359 @@
+
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    display:flex;
+    flex-direction: row;
+   /*  background-color: red; */
+    flex-wrap:nowrap;
+    flex-grow: 0;
+    flex-shrink: 10;
+}
+.trending{
+    margin:2rem;
+    width:70vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211, 223, 215);
+    border-radius: 1rem;
+}
+.trending h1{
+    position:sticky;
+    top:9vh;
+    margin:40px;
+    font-size: 2rem;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #fff;
+    padding:10px;
+    width:20rem;
+    display:inline;
+    border-radius: 0.7rem;
+}
+.card{
+    margin:1rem;
+    background-color: #ffffff;
+    padding:1rem;
+    width:20rem;
+    height:40rem;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px grey;
+    display:flex;
+    flex-direction: column;
+    /* align-items:flex-start */;
+    
+}
+.card h2{
+    margin:0.8rem 0;
+    font-size: 1.5rem;
+    font-family: 'Oxygen','sans-serif';
+    font-weight: 600;
+    color:#2f3640;
+}
+
+.card:hover{
+    transform:scale(1.03);
+    transition:0.4s ease-in-out all;
+    cursor: pointer;
+    color:rgb(26, 26, 26);
+    background-color: rgb(238, 255, 245);
+}
+.card-image{
+
+    height:100%;
+    margin-bottom:0.8rem;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    
+}
+.card-image:hover{
+    align-items: center;
+    width:500px;
+    transition: .4s ease-in-out all;
+    
+
+}
+.card-contain{
+    display: flex;
+    flex-direction: row;
+    padding:1rem;
+    justify-content: space-around;
+}
+.card button{
+    margin:1rem 0;
+    /* margin-left:4.5rem; */
+    width:9rem;
+    height: 3rem;
+    border-radius: rem;
+    border:0;
+    background-color: rgb(5, 167, 54);
+    transition: ease-in 0.4s;
+    align-self: center;
+}
+.card button:hover{
+    background-color: rgb(16, 185, 67);
+    width:10rem;
+    height:3.2rem;
+}
+.card p{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8rem;
+    letter-spacing: 0.1rem;
+    color:#5f5f5f;
+}
+.card button a{
+    color:rgb(255, 255, 255);
+    
+    font-size:1rem;
+}
+
+.card-1{
+    background-image: url('../image/10-Ras-Dashen-Simien-Mountains-Ethiopia-monkey.jpg');
+}
+.peopleratings{
+    width:90vw;
+    
+    box-shadow: 1px 1px 10px #2f3640;
+    margin: auto;
+    display:flex;
+   /*  flex-direction: column; */
+    /* justify-content:space-around; */
+
+
+}
+.peopleimg{
+    width:10rem;
+    height:10rem;
+    border-radius: 2rem;
+    background-color:red;
+    align-self: center;
+    background-image: url('../image/people/girl.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.qoutes{
+    width:50%;
+    background-color:rgb(244, 255, 244);
+    align-self: center;
+    box-shadow:1px 1px 7px #afafaf;
+    padding:1.8rem;
+    margin:2rem;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    font-family: "oxygen";
+    text-overflow: clip;
+    overflow: hidden;
+}
+.qoutes h4{
+    font-size: 1.3rem;
+    margin:.4rem
+}
+
+.containtestimonials{
+    display:flex;
+    margin-left: 3rem;
+   /*  flex-direction: column; */
+    /* justify-content:right; */
+
+}
+.containtestimonials2{
+    display:flex;
+   /*  flex-direction: column; */
+    /* justify-content:left; */
+    margin-left: 3rem;
+}
+.testimonials h1{
+    text-align: center;
+    margin: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(56, 56, 56);
+    line-height: 4.5rem;
+    font-family: "oxygen";
+}
+.testimonials{
+    background-image: url('../image/194.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* section */
+
+#presentation-container {
+    display: flex;
+    flex-flow: column;
+  }
+  #green-text{
+      color:rgb(35, 218, 35);
+  }
+  
+  #presentation-title-description {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    width: 60%;
+  }
+  
+  #presentation-title-description h1 {
+    font-size: 45px;
+  }
+  
+  #presentation-title-description p {
+    margin-top: 1%;
+  }
+  
+  #section-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-button {
+    border: none;
+    border-radius: 10px;
+    background-color: inherit;
+    box-shadow: 1px 2px 15px #bebebe;
+    padding: 15px;
+    width: 10%;
+    margin: 2%;
+    font-size: 15px;
+  }
+  
+  .product-button:hover {
+    cursor: pointer;
+  }
+  
+  .product-button:focus {
+    outline: 0;
+  }
+  
+  .product-button-active {
+    background-color: #24ca32;
+    color: white;
+  }
+  
+  
+  
+  
+  /* -- SUBSECTION CSS: Section Content CSS -- */
+  
+  #section-content-container {
+    margin: auto;
+    width: 75%;
+  }
+  
+  .product-content {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 2%;
+  }
+  
+  #content-image {
+    width: 100%;
+    height: 100%;
+    width: 70%;
+    height: auto;
+  }
+  
+  #content-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  #content-title-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 1%;
+  }
+  
+  #content-title-text p {
+    margin-top: 2%;
+  }
+  
+  .product-features-list {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    margin-top: 5%;
+  }
+  
+  #first-feature-list {
+    margin-top: 0;
+  }
+  
+  #product-feature-image {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 10%;
+  }
+  
+  #correct-icon {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #inside-features-title-text {
+    display: flex;
+    flex-flow: column;
+    margin-left: 2%;
+  }
+  
+  #content-button {
+    border: none;
+    border-radius: 10px;
+    background-color: #24ca32;
+    box-shadow: 1px 2px 15px #bebebe;
+    padding: 15px;
+    width: 25%;
+    margin-top: 6%;
+    font-size: 16px;
+    color: white;
+  }
+  
+  #content-button:hover {
+    cursor: pointer;
+    background-color: #3daa61;
+  }
+
+  .Footer-container{
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    padding:3rem;
+    width:100vw;
+    height:20vh;
+    color:rgb(51, 51, 51);
+    font-family: 'Oxygen', sans-serif;
+    background-image: url('../../resources/image/svgs/side\ green\ and\ yello.svg');
+
+
+}

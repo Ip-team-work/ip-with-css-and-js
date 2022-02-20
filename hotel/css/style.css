@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Poppins;
+}
+
+.contain-welcome{
+    display: flex;
+    margin:1rem;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.vector-1 >img{
+    width:30rem;
+}
+.welcome-describe{
+    width:40rem;
+}
+.welcome-describe>p{
+    color:rgb(68, 68, 68);
+}
+.intro-img{
+    margin:auto;
+    background-image: url('/resources/image/hotel\ img.jpg');
+    background-size: cover;
+    background-position: center;
+    width:90vw;
+    height:30vh;
+    border-radius: 1rem;
+}
+.card-container{
+    width:60vw;
+    height: 35vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    
+    background-color: rgb(236, 236, 236);
+
+}
+
+.back{
+    background-image: linear-gradient(rgba(17, 17, 17, 0.8),rgba(172, 172, 172, 0.3)),url("../../resources/image/Hotels/sunset-sea-vector-landscape-background-lake-ocean-cloud-water-nature-morning-evening-sun-sunlight-outdoor-river-view-art-227052828.jpg")  ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding:1rem;
+    background-position: sticky;
+    width:100%;
+}
+
+
+
+.hotel-img{
+    margin:1rem ;
+}
+.hotel-img>img{
+    width:20rem;
+}
+.hotel-description>a{
+    margin:0rem 1rem;
+}
+.hotel-description{
+    margin:1rem;
+    width:;
+}
+.hotel-description>h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin:1rem;
+    text-align: left;
+}
+
+.hotel-description>p{
+    
+    letter-spacing: .14em;
+    color:rgb(49, 49, 49);
+    padding:1rem;
+}
+
+.comments{
+    display: flex;
+    
+    flex-direction: column;
+}
+.rate{
+    width:10rem;
+    height: 3rem;
+    border-radius: .8rem;
+    
+    color:rgb(41, 41, 41);
+
+    display:flex;
+    align-items: center;
+    
+}
+.rate>button{
+    margin:.4rem;
+   width:3rem;
+   height: 2rem;
+   background-color: rgb(10, 95, 10);
+   border-style: none;
+   color:white;
+
+}
+.btn-show{
+    width:10rem;
+    height: 3rem;
+    margin-right:1rem;
+    background-color: rgb(11, 103, 165);
+    border-style: none;
+    color:white;
+    
+}
+
+.aos{
+    opacity: 1;
+    transition: all ease 1s;
+}
+
+.aos.active{
+    opacity:0;
+}

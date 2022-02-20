@@ -93,15 +93,16 @@ nav{
     padding-left: rem;
     
     font-size: 5rem;
-    color:rgb(238, 238, 238);
+    color:rgb(255, 255, 255);
     line-height: 4.5rem;
+    letter-spacing: 1rem;
     /*  */
     animation: heading 1s ease-in;
     font-family: 'Oxygen', sans-serif;
 }
 .front-header>h2{
    
-    color:rgb(46, 46, 46);
+    color:rgb(211, 211, 211);
     font-family: 'Oxygen', sans-serif;
     /* display:flex; */
 }
@@ -158,6 +159,7 @@ nav{
     background-color: #ffffff;
     padding:1rem;
     width:20rem;
+    height:40rem;
     border-radius: 15px;
     box-shadow: 10px 10px 10px grey;
     display:flex;
@@ -182,7 +184,7 @@ nav{
 }
 .card-image{
 
-    height:300px;
+    height:100%;
     margin-bottom:0.8rem;
     background-size: cover;
     background-position: center;
@@ -294,7 +296,7 @@ nav{
     
 }
 .wave{
-    background-image: url('../image/places/2252467.jpg');
+    background-image: url('../image/places/1266827.jpg');
    ;
 }
 
@@ -387,7 +389,7 @@ nav{
 .company-history{
     display: flex;
     flex-direction: column;
-    
+    background-color:#dfdfdf ;
     height:30rem;
     margin:1rem 3rem;
 }
@@ -422,7 +424,7 @@ nav{
 
 .peopleratings{
     width:90vw;
-    height:;
+    
     box-shadow: 1px 1px 10px #2f3640;
     margin: auto;
     display:flex;
@@ -445,7 +447,7 @@ nav{
     width:50%;
     background-color:rgb(244, 255, 244);
     align-self: center;
-    box-shadow:1px 1px 13px #afafaf;
+    box-shadow:1px 1px 7px #afafaf;
     padding:1.8rem;
     margin:2rem;
     font-size: .9rem;
@@ -477,10 +479,40 @@ nav{
     margin: 3rem;
     font-size: 3rem;
     font-weight: bold;
-    color:rgb(44, 44, 44);
+    color:rgb(56, 56, 56);
     line-height: 4.5rem;
     font-family: "oxygen";
 }
+.testimonials{
+    background-image: url('../image/194.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+.custom-shape-divider-bottom-1645287241 {
+    /* position: absolute; */
+   /*  bottom: 0;
+    left: 0; */
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1645287241 svg {
+    /* position: relative; */
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 81px;
+}
+
+.custom-shape-divider-bottom-1645287241 .shape-fill {
+    fill: #dfdfdf;
+}
+
+
+
+
 
 
 
@@ -555,10 +587,42 @@ nav{
         font-family: "oxygen";
         color:#161816;
     }
+    .containtestimonials{
+        display:flex;
+        margin-left: 3rem;
+        flex-direction: column;
+        justify-content:right;
+    
+    }
+    .containtestimonials2{
+        display:flex;
+        flex-direction: column;
+        justify-content:left;
+        margin-left: 3rem;
+    }
     .testimonials h1{
         font-size: 1.8rem;
     }
+    .peopleimg{
+        width:6rem;
+        height:6rem;
+        
+    }
+    .qoutes{
+        width:80%;
+        
+    }
+    .qoutes h4{
+        font-size: 1.3rem;
+        margin:.4rem
+    }
+    .peopleratings{
+        
+        flex-direction: column;
+        justify-content:space-around;
     
+    
+    }
     
     @keyframes navLinkFade {
         from{

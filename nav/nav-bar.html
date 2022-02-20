@@ -1,42 +1,671 @@
-<nav id="navbar">
-            
-    <!-- nav top -->
-        <div class="logo"  >
-            TOUR AND TRAVEL
-            <!-- <img src="" alt="logo"> -->
-        </div>
-        <ul class="nav-links" id="menu" >
-            <li>HOME</li>
-            <li>Flight</li>
-            <li>Tour Packages</li>
-            <li> HOTEL</li>
-            <li>ABOUT US </li>
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="responsive.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./nav-css.css">
+    <link rel="stylesheet" href="./css/mainStyle.css">
+    <link rel="stylesheet" href="slide.css">
+  <title> Landing Page </title>
+
+</head>
+<body>
+
+
+  <header id="header">
+
+    <div id="normal-header">
+      <a href="#" id="image-link"><img src="https://i.ibb.co/LxGJ5gF/reverse-white.png" alt="Reverse Logo" id="header-img"/></a>
+
+      <nav id="nav-bar">
+        <ul>
+          <li class="nav-link" id="menu-item"><a href="#hero-header" class="menu-link"> Home </a></li>
+          <li class="nav-link" id="menu-item"><a href="#features-container" class="menu-link"> Features </a></li>
+          <li class="nav-link" id="menu-item"><a href="#presentation-container" class="menu-link"> Products </a></li>
+          <li class="nav-link" id="menu-item"><a href="#main-media-container" class="menu-link"> Media </a></li>
+          <li class="nav-link" id="menu-item"><a href="#prices-section-container" class="menu-link"> Pricing </a><li>
         </ul>
-    <!-- x ----nav top x------>
-
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      </nav>
     </div>
 
-    <div class="search-box">
-        <input class="search-txt" type="text" name="" placeholder="Type to search ">
-        <a href="#" class="search-btn">
-            <i class="fas fa-search"></i>
-        </a>
-    
+
+    <div id="responsive-header">
+      <div id="responsive-logo-button">
+        <a href="#" id="image-link"><img src="https://i.ibb.co/0jM3ZvH/reverse-black.png" alt="Reverse Logo" id="header-img-black"/></a>
+        <button id="image-button-black"><img src="https://i.ibb.co/yfM3fdZ/dropdown-menu-black.png" alt="Dropdown Menu" id="dropdown-button-black" /></button>
+      </div>
+
+      <div id="responsive-nav-bar">
+        <ul>
+          <li class="nav-link" id="responsive-home-item"><a href="#hero-header" class="responsive-menu-link"> Home </a></li>
+          <li class="nav-link" id="responsive-features-item"><a href="#features-container" class="responsive-menu-link"> Features </a></li>
+          <li class="nav-link" id="responsive-products-item"><a href="#presentation-container" class="responsive-menu-link"> Products </a></li>
+          <li class="nav-link" id="responsive-media-item"><a href="#main-media-container" class="responsive-menu-link"> Media </a></li>
+          <li class="nav-link" id="responsive-pricing-item"><a href="#prices-section-container" class="responsive-menu-link"> Pricing </a><li>
+          </ul>
+      </div>
     </div>
 
-</nav>
+  </header>
 
 
-<!-- nav sidebar -->
-<div class="side-bar social">
-            
-    <a href="#"><i id="social" class=" fab fa-facebook-f"></i></a>
-    <a href="#"><i id="social" class=" fab fa-instagram"></i></a>
-    <a href="#"><i id="social" class=" fab fa-youtube"></i></a>
-    <a href="#"><i id="social" class=" fab fa-twitter"></i></a>
+  <!-- Hero Image, text & button -->
+
+    <div id="hero-header">
+        <div id="hero-content">
+        <h1 id="hero-title"> ABUGIDA </H1>
+
+        <p id="hero-text"> SAFE TRAVEL AND TOUR IN ETHIOPIA  </p>
+
+        <a href="#features-container"><button id="hero-button"> Discover </button></a>
+        </div>
+
+    </div>
+
+    <main class="main">
+      <div class="contain">
+          <!-- Trending places -->
+          <div class="trending">
+              <h1>Trending Places</h1>
+              <div class="card-contain">
+                  <div class="card">
+                      <div class="card-image card-1">
+                          
+                      </div>
+                      <h2>Semien Mountains</h2>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum numquam rem commodi repellat ex assumenda modi fuga quidem harum nesciunt asperiores explicabo, 
+                      </p>      
+                      <button>
+                          <a href="">Book Now</a>
+                      </button>  
+                  </div>
+
+                  <div class="card">
+                      <div class="card-image card-1">
+                          
+                      </div>
+                      <h2>Semien Mountains</h2>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum numquam rem commodi repellat ex assumenda modi fuga quidem harum nesciunt asperiores explicabo,
+                      </p>      
+                      <button>
+                          <a href="">Book Now</a>
+                      </button>  
+                  </div>
+
+                  <div class="card">
+                      <div class="card-image card-1">
+                          
+                      </div>
+                      <h2>Semien Mountains</h2>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum numquam rem commodi repellat ex assumenda modi fuga quidem harum nesciunt asperiores explicabo,
+                      </p>      
+                      <button>
+                          <a href="">Order Now</a>
+                      </button>  
+                  </div>
+              </div>
+              
+          </div>
+
+              
+          <!-- trending places End -->
+          
+
+          <!-- hiking places -->
+          
+              
+          <div class="trending">
+              <h1>Popular Places</h1>
+              <div class="card-contain">
+                  <div class="card">
+                      <div class="card-image card-1">
+                          
+                      </div>
+                      <h2>Semien Mountains</h2>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum numquam rem commodi repellat ex assumenda modi fuga quidem harum nesciunt asperiores explicabo, 
+                      </p>      
+                      <button>
+                          <a href="">Book Now</a>
+                      </button>  
+                  </div>
+
+                  <div class="card">
+                      <div class="card-image card-1">
+                          
+                      </div>
+                      <h2>Semien Mountains</h2>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum numquam rem commodi repellat ex assumenda modi fuga quidem harum nesciunt asperiores explicabo,
+                      </p>      
+                      <button>
+                          <a href="">Book Now</a>
+                      </button>  
+                  </div>
+
+                  <div class="card">
+                      <div class="card-image card-1">
+                          
+                      </div>
+                      <h2>Semien Mountains</h2>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum numquam rem commodi repellat ex assumenda modi fuga quidem harum nesciunt asperiores explicabo,
+                      </p>      
+                      <button>
+                          <a href="">Order Now</a>
+                      </button>  
+                  </div>
+              </div>
+              
+          </div>
+                  
+
+          <!-- hiking places end-->
+         
+          </div>
+      </div>
+      
+      <div class="advert">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eaque saepe repudiandae maiores rerum veritatis deserunt facere! Fugiat nulla iste commodi itaque nostrum, dolore natus! Assumenda repellendus nihil quibusdam rerum.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eaque saepe repudiandae maiores rerum veritatis deserunt facere! Fugiat nulla iste commodi itaque nostrum, dolore natus! Assumenda repellendus nihil quibusdam rerum.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eaque saepe repudiandae maiores rerum veritatis deserunt facere! Fugiat nulla iste commodi itaque nostrum, dolore natus! Assumenda repellendus nihil quibusdam rerum.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eaque saepe repudiandae maiores rerum veritatis deserunt facere! Fugiat nulla iste commodi itaque nostrum, dolore natus! Assumenda repellendus nihil quibusdam rerum.</p>
+      </div>
+
+      
+      
+ </main>
+ <div class="testimonials">
+  <h1>Testimonials</h1>
+  <div class="peopleratings">
+      <div class="containtestimonials">
+          <div class="peopleimg">
+          
+          </div>
+          <div class="qoutes">
+              <h4>Saron Human </h4>
+              <p>
+                  " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic non saepe vel sunt, cum totam eos natus officiis nemo quasi quaerat, necessitatibus animi perspiciatis similique numquam doloribus fugiat incidunt earum!"
+              </p>
+          </div>
+      </div>
+
+      <div class="containtestimonials2">
+          <div class="peopleimg">
+          
+          </div>
+          <div class="qoutes">
+              <h4>Saron Human </h4>
+              <p>
+                  " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic non saepe vel sunt, cum totam eos natus officiis nemo quasi quaerat, necessitatibus animi perspiciatis similique numquam doloribus fugiat incidunt earum!"
+              </p>
+          </div>
+      </div>
+  </div>
 </div>
-<!-- x-----nav sidebar-----x -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="presentation-container">
+
+  <div id="presentation-title-description">
+    <h1> Recent <span id="green-text">adventures</span> </h1>
+
+    <hr id="title-text-separator" />
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat. </p>
+  </div>
+
+  <div id="section-buttons">
+
+    <button class="product-button" id="first-product-button"> Gondor </button>
+
+    <button class="product-button" id="second-product-button"> Addis Abeba </button>
+
+    <button class="product-button" id="third-product-button"> Axum </button>
+
+    <button class="product-button" id="fourth-product-button"> Lalibela</button>
+
+  </div>
+
+
+  <!-- Product Content Section -->
+  <div id="section-content-container">
+
+
+
+    <!-- Content Container 1 -->
+    <div id="product-container-one" class="product-content">
+
+      <div id="content-image-container">
+        <img src="../resources/image/10-Ras-Dashen-Simien-Mountains-Ethiopia-monkey.jpg" id="content-image" class="image1" />
+        
+      </div>
+
+      <div id="content-title-text">
+        <h1> Adventure highlights </h1>
+
+        <p id="centered-product-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+          <br /><br />
+        </p>
+
+        <div class="product-features-list" id="first-feature-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> mountain climbing  </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> chilada baboons </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Endemic birds  </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Fun with the local community </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+
+        <button id="content-button"> Read More </button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Content Container 2 -->
+    <div id="product-container-two" class="product-content">
+      <div id="content-image-container">
+        <img src="../resources/image/Hotels/hotelBackground.jpg" id="content-image" class="image2" />
+      </div>
+
+      <div id="content-title-text">
+        <h1> Adventure Remarks </h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+          <br /><br />
+        </p>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Luxury Hotels </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Summer climate </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Beautiful Parks </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Astonishing architectural sites</h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <button id="content-button"> Read More </button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Content Container 3 -->
+    <div id="product-container-three" class="product-content">
+      <div id="content-image-container">
+        <img src="../resources/image/places/volcanic-landscape-active-volcano-spews-out-billowing-smoke-rivers-red-hot-lava-40611807.jpg" id="content-image" class="image3" />
+      </div>
+
+      <div id="content-title-text">
+        <h1> Adventure Remarks</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+          <br /><br />
+        </p>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Lowest point below sea level on Earth </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Active volcanos </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Hiking </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <button id="content-button"> Read More </button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Content Container 4 -->
+    <div id="product-container-four" class="product-content">
+      <div id="content-image-container">
+        <img src="../resources/image/places/lalibela.jpg" id="content-image" class="image2" />
+      </div>
+
+      <div id="content-title-text">
+        <h1> Adventure Remarks </h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+          <br /><br />
+        </p>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Rockhewn church </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Beautiful architecture </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Breath taking religious ceremonies </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <div class="product-features-list">
+
+          <div id="product-feature-image">
+            <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+          </div>
+
+          <div id="inside-features-title-text">
+            <h2> Welcoming Local community  </h2>
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+            incidintum ut labore et dolor magna aliqua. </p>
+          </div>
+
+        </div>
+
+        <button id="content-button"> Read More </button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="checker">
+  <h1>hello there</h1>
+  </div>
+
+
+<footer>
+  <div class="Footer-container wave ">
+          <div class="info">
+              <ul>
+                  <li>
+                      Terms and conditions
+                  </li>
+                  <li>
+                      Private policy
+                  </li>
+                  <li>
+                      Cookies Policy
+                  </li>
+                  <li>
+                      Manage Cookies
+                  </li>
+              </ul>
+          </div>
+          <div class="contact">
+              <h3>Contact us </h3>
+              <ul>
+                  <li>
+                      phone
+                  </li>
+                  <li>
+                      email
+                  </li>
+                  <li>
+                      address
+                  </li>
+              </ul>
+          </div>
+          <div class="social">
+              <h5>Follow us on</h5>
+                  <a href="#"><i id="social" class=" fab fa-facebook-f"></i></a>
+                  <a href="#"><i id="social" class=" fab fa-instagram"></i></a>
+                  <a href="#"><i id="social" class=" fab fa-youtube"></i></a>
+                  <a href="#"><i id="social" class=" fab fa-twitter"></i></a>
+          </div>
+  </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/slide.js"></script>
+<script src="./nav-js.js"></script>
+</body>
+</html>
