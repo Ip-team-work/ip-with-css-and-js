@@ -75,13 +75,13 @@ body{
     overflow: hidden;
     
 }
-.card-image:hover{
+/* .card-image:hover{
     align-items: center;
     width:500px;
     transition: .4s ease-in-out all;
     
 
-}
+} */
 .card-contain{
     display: flex;
     flex-direction: row;
@@ -117,7 +117,8 @@ body{
 }
 
 .card-1{
-    background-image: url('../image/10-Ras-Dashen-Simien-Mountains-Ethiopia-monkey.jpg');
+    background-image: url('../resources/image/giorgis-aerial.jpg');
+    background-position: center;
 }
 .peopleratings{
     width:90vw;
@@ -353,7 +354,7 @@ body{
     height:20vh;
     color:rgb(51, 51, 51);
     font-family: 'Oxygen', sans-serif;
-    background-image: url('../../resources/image/svgs/side\ green\ and\ yello.svg');
+    background-image: url('../resources/image/svgs/side\ green\ and\ yello.svg');
 
 
 }

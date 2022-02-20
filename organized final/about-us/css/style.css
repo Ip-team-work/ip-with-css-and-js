@@ -19,6 +19,12 @@ html {
   padding: 100px 0;
   background-color: rgb(255, 255, 255);
 }
+.img-cover{
+  background-image: url('../../resources/image/places/ETH_2015_DK_052.jpg');
+  background-size: cover;
+  background-position: center;
+  height:10vh;
+}
 .timeline {
   width: 80%;
   height: auto;
@@ -199,3 +205,17 @@ body{
         width:40rem;
     }
   }
+
+  .Footer-container{
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    padding:3rem;
+    width:100vw;
+    height:20vh;
+    color:rgb(51, 51, 51);
+    font-family: 'Oxygen', sans-serif;
+    background-image: url('../../resources/image/svgs/side\ green\ and\ yello.svg');
+
+
+}
