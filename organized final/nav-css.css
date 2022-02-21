@@ -198,17 +198,286 @@ html {
   
 
   
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&display=swap');
+
+
+
+  body{
+      font-family: Poppins;
+      background-image: linear-gradient(rgba(202, 198, 198, 0.8),rgba(172, 172, 172, 0.3)),url("../../resources/image/Hotels/sunset-sea-vector-landscape-background-lake-ocean-cloud-water-nature-morning-evening-sun-sunlight-outdoor-river-view-art-227052828.jpg")  ;
+  }
+  
+  
+  :root{
+      --orange: #ffa500;
+      --green: rgba(150, 214, 155, 0.979);
+  }
+  
+  *{
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      outline: none;
+      box-sizing: border-box;
+      text-decoration: none;
+      transition: all 0.3s linear;
+  }
+  
+  ::selection{
+      background-color: var(--orange);
+      color: white;
+  } 
+  html{
+      font-size: 65%;
+      overflow-x: hidden;
+      scroll-padding-top: 6rem;
+      scroll-behavior: smooth;
+  }
+  
+  
+  
+  section{
+      padding: 2rem 9%;
+  }
+  
+  .heading{
+      text-align: center;
+      padding: 2.5rem 0;
+  }
+  
+  .heading span{
+      font-size: 3.5rem;
+      background-color: #333;
+      color: var(--orange);
+      border-radius: .5rem;
+      padding: .2rem 1rem;
+      /* display: inline-block; */
+  }
+  
+  .heading span.space{
+      background: none;
+  }
+  
+  
+  .btn{
+      display: inline-block;
+      margin-top: 4rem;
+      background-color: var(--green);
+      color: white;
+      width: 20%;
+      padding: 5px 2px;
+      border: 5px solid rgba(11, 112, 2, 0.795);
+      border-radius: 1rem;
+      cursor: pointer;
+      font-size: 1.7rem;
+  }
+  
+  .btn:hover{
+      background-color: #3331;
+      border: 5px solid rgba(84, 133, 79, 0.795);
+      color: var(--orange);
+  }
+  
+  
+  header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 9%;
+  }
+  
+  header .ComName{ 
+      font-size: 2.5rem;
+      font-weight:   bolder;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+  }
+  
+  header .ComName span{
+      color: var(--orange);
+  }
+  
+  header .navBar a{
+      color: white;
+      font-size: 2rem;
+      margin: 0 0.8rem;
+  } 
+  
+  header .navBar a:hover{
+      color: var(--orange);
+      text-decoration: none;
+  }
+  
+  header .icon i{ 
+      font-size: 2.5rem;
+      color: white;
+      cursor: pointer;
+  }
+  
+  
+  
+  header .icon i:hover{
+      color: var(--orange);
+  } 
+  
+  header .search{
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+     background-color: #333;
+     border-top: 0.1rem solid rgba(255, 255, 255, .2);
+     display: flex;
+     align-items: center;
+     z-index: 1001;
+     clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+  } 
+  
+  header .search.active{
+      clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+  }
+  
+  header .search #search-bar{
+      width: 100%;
+      padding: 1rem;
+      text-transform: none;
+      color: #333;
+      font-size: 1.7rem;
+      border-radius: 0.5rem;
+  } 
+  
+  header .search label{
+      color: white;
+      cursor: pointer;
+      font-size: 3rem;
+      margin-left: 1.5rem;
+  } 
+  
+  header .search label:hover{
+         color: var(--orange);
+  }
+  
+  
+  img.logo{
+      width: 50px;
+      height: 50px;
+  }
+  
+  img.logo .ComName{
+      margin-left: -20px;
+  }
+  
+  .login-form{
+      position: fixed;
+      top: -120%;
+      left: 0;
+      z-index: 10000;
+      min-height: 100vh;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center ; 
+  }
+  
+  .login-form.active{
+     top: 0;
+  }
   
   
   
   
+  .login-form form{
+      margin: 2rem;
+      padding: 1.5rem 2rem;
+      border-radius: 0.5rem;
+      background-color: rgba(90, 127, 129, 0.5);
+      width: 30%;
+  }
+  
+  .login-form form h3{
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--orange);
+      text-transform: uppercase;
+      text-align: center;
+      padding: 1rem 0;
+  }
   
   
+  .login-form form .box{
+      background-color: aliceblue;
+      width: 100%;
+      padding: 4px;
+      font-size: 1.7rem;
+      color: var(--orange);
+      margin: 1rem 0;
+      border: 2px solid rgba(0,0,0,0.3);
+      border-radius: 1rem;
+  }
+  
+  .login-form form .box:focus{
+     background-color: var(--green); 
+  }
   
   
+  .login-form form #remember{
+      margin: 2rem 0;
+  }
   
+  .login-form form label{
+      color: white;
+      font-weight: lighter;
+      font-size: 1.5rem;
+  }
   
+  .login-form form .btn{
+      display: block;
+      width: 100%;
   
+  }
+  
+  .login-form form p{
+      padding: 5px 0;
+      font-size: 15px;
+      color: white; 
+  }
+  
+  .login-form form p a{
+      color: var(--orange);
+  }
+  .login-form form p a:hover{
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 3px 2px 3px 2px;
+      background-color: rgba(184, 236, 177, 0.205);
+  }
+  
+  .login-form #form-close{ 
+      position: absolute;
+      top: 2rem;
+      right: 3rem;
+      font-size: 3rem;
+      color: white;
+      cursor: pointer;
+  }
+  
+  #menu_bar{
+      color: white;
+      border: 0.1rem solid white;
+      border-radius: 0.5rem;
+      font-size: 3rem;
+      padding: 0.5rem 1.2rem;
+      cursor: pointer;
+      display: none;
+  }
   
   /* @Media min-width: 480px */
   @media only screen and (min-width : 200px) and (max-width : 860px) {

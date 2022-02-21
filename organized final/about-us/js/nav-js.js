@@ -4,7 +4,7 @@ $(document).ready(function(){
     if($(window).scrollTop() > 50) {
         $("#header").addClass("active-header");
         $(".menu-link").addClass("active-menu-links");
-        $("#header-img").attr("src", "../../resources/image/compLogo");
+        $("#header-img").attr("src", "../resources/image/compLogo.png");
     } else {
         //remove the background property so it comes transparent again (defined in your css)
        $("#header").removeClass("active-header");

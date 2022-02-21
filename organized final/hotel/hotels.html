@@ -12,41 +12,58 @@
 </head>
 <body>
 
-    <header id="header">
+    <header id="nav">
+        <img src="../image/compLogo.png" alt="company logo" class="logo">
+        <a href="#" class="ComName"><span>T</span>ravel</a>
+        <nav class="navBar" id="navB">
+            <a href="#" class = "links">Home</a>
+            <a href="#book" class = "links">book</a>
+            <a href="#" class = "links">packages</a>
+            <a href="#" class = "links">services</a>
+            <a href="#" class = "links">hotles</a>
+            <a href="#" class = "links">aboutus</a>
+            <a href="#" class = "links">contact</a>
+        </nav>
+      
 
-        <div id="normal-header">
-          <a href="#" id="image-link"><img src="../resources/image/compLogo.png" alt="Reverse Logo" id="header-img"/></a>
-    
-          <nav id="nav-bar">
-            <ul>
-              <li class="nav-link" id="menu-item"><a href="../index.html" class="menu-link"> Home </a></li>
-              <li class="nav-link" id="menu-item"><a href="hotel/hotels.html" class="menu-link"> Hotels </a></li>
-              <li class="nav-link" id="menu-item"><a href="../about-us/aboutus.html" class="menu-link"> About us </a></li>
-              <li class="nav-link" id="menu-item"><a href="tour packages" class="menu-link"> Tour packages</a></li>
-              <li class="nav-link" id="menu-item"><a href="../Flight.html" class="menu-link"> Flight </a><li>
-            </ul>
-          </nav>
+        <div class="icon">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn" onclick="toggleFun()"></i>
+
         </div>
-    
-    
-        <div id="responsive-header">
-          <div id="responsive-logo-button">
-            <a href="#" id="image-link"><img src="https://i.ibb.co/0jM3ZvH/reverse-black.png" alt="Reverse Logo" id="header-img-black"/></a>
-            <button id="image-button-black"><img src="https://i.ibb.co/yfM3fdZ/dropdown-menu-black.png" alt="Dropdown Menu" id="dropdown-button-black" /></button>
-          </div>
-    
-          <div id="responsive-nav-bar">
-            <ul>
-              <li class="nav-link" id="responsive-home-item"><a href="../index.html" class="responsive-menu-link"> Home </a></li>
-              <li class="nav-link" id="responsive-features-item"><a href="hotels.html" class="responsive-menu-link"> Hotels </a></li>
-              <li class="nav-link" id="responsive-products-item"><a href="../about-us/aboutus.html" class="responsive-menu-link"> About us </a></li>
-              <li class="nav-link" id="responsive-media-item"><a href="tourpackges" class="responsive-menu-link"> Tour packges </a></li>
-              <li class="nav-link" id="responsive-pricing-item"><a href="flight" class="responsive-menu-link"> flight </a><li>
-              </ul>
-          </div>
-        </div>
-    
-      </header>
+        <i class="fas fa-bars" id="menu_bar" onclick="mainMenuFun()"></i>
+        <form action="" class="search">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <!-- header ends here -->
+
+    <!-- login form starts here -->
+
+    <div class="login-form" id="log">
+
+        <i class="fas fa-times" id="form-close" onclick="toggleFun()"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="email">
+            <input type="password" class="box" placeholder="password">
+            <input type="submit" class="btn" value="login now">
+            <input type="checkbox" id="remember" placeholder="email">
+            <label for="remember">remember me</label>
+            <p>forget password ? <a href="#"> click here</a></p>
+            <p>dont have an acount ? <a href="registration/signupNew.html"> register now</a></p>
+        </form>
+    </div>
+
+
+
+    <!-- login form ends here -->
+
+
+
+
     
     
       <!-- Hero Image, text & button -->

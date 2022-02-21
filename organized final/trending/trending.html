@@ -4,29 +4,64 @@
 <html>
 <head>
  <title>trending practice</title>
+ <link href="css/all.min.css" rel="stylesheet">
+ <link href="css/fontawesome.min.css" rel="stylesheet">
 
+ <link rel="stylesheet" href="hikingcss/hikingIndex.css">
+ <link rel="stylesheet" href="hikingcss/style.css">
 <link href="trending.css" rel="stylesheet">
  </head>
 
 <body >
 
-<div class="nav">
-<h1>Ethio tour and travel</h1>
+<header id="nav">
+        <img src="image/compLogo.png" alt="company logo" class="logo">
+        <a href="#" class="ComName"><span>T</span>ravel</a>
+        <nav class="navBar" id="navB">
+            <a href="#" class = "links">Home</a>
+            <a href="../hiking/hiking/hikingIndex.html#book" class = "links">book</a>
+            <a href="#" class = "links">packages</a>
+            <a href="../hotel/hotels.html" class = "links">hotles</a>
+            <a href="../hiking/hiking/hikingIndex.html" class = "links">hiking</a>
+            <a href="../about-us/aboutus.html" class = "links">aboutus</a>
+            <a href="#footCon" class = "links">contactus</a>
+        </nav>
+      
 
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About Us</a></li>
-<li><a href="#">Contact</a></li>
+        <div class="icon">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn" onclick="toggleFun()"></i>
 
-</ul>
+        </div>
+        <i class="fas fa-bars" id="menu_bar" onclick="mainMenuFun()"></i>
+        <form action="" class="search">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
 
-<button ><a href="#">Sign Up</a></button>
+    <!-- header ends here -->
 
-</div>
+    <!-- login form starts here -->
 
-<!--end of nav-->
+    <div class="login-form" id="log">
 
-<div class="cover">
+        <i class="fas fa-times" id="form-close" onclick="toggleFun()"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="email">
+            <input type="password" class="box" placeholder="password">
+            <input type="submit" class="btn" value="login now">
+            <input type="checkbox" id="remember" placeholder="email">
+            <label for="remember">remember me</label>
+            <p>forget password ? <a href="#"> click here</a></p>
+            <p>dont have an acount ? <a href="registration/signupNew.html"> register now</a></p>
+        </form>
+    </div>
+
+
+
+    <!-- login form ends here -->
 
 <h1>EXPLORE</h1>
 
@@ -156,34 +191,50 @@
 	</div>
 </div>
 
+<footer id="footCon">
+	<div class="Footer-container wave ">
+		<div class="info">
+			<ul>
+				<li>
+					Terms and conditions
+				</li>
+				<li>
+					Private policy
+				</li>
+				<li>
+					Cookies Policy
+				</li>
+				<li>
+					Manage Cookies
+				</li>
+			</ul>
+		</div>
+		<div class="contact">
+			<h3>Contact us </h3>
+			<ul>
+				<li>
+					phone
+				</li>
+				<li>
+					email
+				</li>
+				<li>
+					address
+				</li>
+			</ul>
+		</div>
+		<div class="social">
+			<h5>Follow us on</h5>
+			<a href="#"><i id="social" class=" fab fa-facebook-f"></i></a>
+			<a href="#"><i id="social" class=" fab fa-instagram"></i></a>
+			<a href="#"><i id="social" class=" fab fa-youtube"></i></a>
+			<a href="#"><i id="social" class=" fab fa-twitter"></i></a>
+		</div>
+	</div>
+</footer>
 
-<br><br>
-<!--footer-->
-
-<div class="footer">
-
-<div>
-	<br><br>	
-			<p align="center">
-	Contact Us:
-	<ul>
-		<li>travelinfo@gmail.com</li>
-		<li>+251 11 861 21 21</li>
-		<li>
-			<pre>
-Africa Avenue Behind DH Geda Building,
-Addis Ababa, Ethiopia</pre>
-<br><br><br>
-				SEng 2012|Group 9
-				Copyright &copy; AASTU
-				All Rights Reserved
-			</p>
-</div>
-	
-
-
-</div>
-
+<script src="js/hikeScript.js"></script>
+<script src="js/usericon.js"></script>
 
 
 

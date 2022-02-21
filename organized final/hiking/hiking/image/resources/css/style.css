@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=PT+Sans&display=swap');
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    /* overflow-x:hidden; */
+    
+}
+li{
+    list-style-type:none;
+}
+nav{
+    position:sticky; 
+    top:0;
+    display:flex;
+    z-index:20;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgb(83, 83, 83,.8);
+    height:8vh;
+    width:100vw;
+    transition: all .8s ease-in-out;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
+.navadd{
+    flex-direction: column;
+    height:15vh;
+    background-color: rgb(83, 83, 83,.0);
+    background-image: url('../image/places/1266827.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in .5s;
+    
+}
+
+.logo{
+   font-size: 1.6rem;
+   color:rgb(255, 255, 255);
+   font-weight: bold;
+   
+}
+.marginauto{
+    margin:auto;
+}
+.nav-links{
+    
+    display: flex;
+    justify-content: space-around;
+    width:40%;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    text-transform:uppercase;
+    transition: all ease-in 1s;
+    color:rgb(255, 255, 255);
+}
+.nav-image{
+    position: relative;
+    width:100vw;
+    height:10vh;
+    background-image: url('../image/places/1266827.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+.nav-image2{
+    height: 100vh;
+    background-image: url('../image/Hotels/hotelBackground.jpg');
+}
+.side-bar{
+    position:fixed; 
+    top:40%;
+    width:3vw;
+    margin: 10px;
+    padding:5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+    border-radius: 3px;
+    opacity: 0.3;
+    z-index:50;
+    animation: frontface 3s ease-in-out;
+}
+.side-bar i{
+    color:aqua;
+}
+.side-bar:hover{
+    opacity:1;
+    transition: all ease-in-out 0.3s;
+}
+.side-bar i:hover{
+    color:white;
+    transition: ease-in-out 0.3s;
+    font-size: 1.8rem;
+}
+
+
+.social{
+    padding:1rem;
+    
+}
+.fab{
+    margin:10px;
+}
+.burger{
+    display: none;
+}
+.burger div{
+    width:25px;
+    height: 3px;
+    background-color: rgb(233, 233, 233);
+    margin:5px;
+    
+
+}
+
+.trending{
+    margin:2rem;
+    width:70vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211, 223, 215);
+    border-radius: 1rem;
+}
+.trending h1{
+    position:sticky;
+    top:9vh;
+    margin:40px;
+    font-size: 2rem;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #fff;
+    padding:10px;
+    width:20rem;
+    display:inline;
+    border-radius: 0.7rem;
+}
+.trend1{
+    display: flex;
+    margin:10px 0 20px 10px;
+    background-color: rgb(255, 255, 255);
+    flex-wrap:nowrap;
+    width:90%;
+    border-radius: 1rem;
+
+}
+.side-img{
+    width:25rem;
+    height: 15rem;
+    padding:5px;
+    background-size:cover;
+    background-position: center; 
+    border-radius: 1rem 1rem 0 0;  
+    transition: ease-in all .3s;
+}
+.side-img:hover{
+    border-radius: 0;
+    width:30rem;
+    height: 20rem;
+    z-index: 1;
+}
+#img1{
+    background-image: url("../image/10-Ras-Dashen-Simien-Mountains-Ethiopia-monkey.jpg");
+}
+#img2{
+    background-image: url("../image/places/2252467.jpg");
+}
+#img3{
+    background-image: url("../image/places/4289652.jpg");
+}
+#img4{
+    background-image: url("../image/places/lalibela.jpg");
+}
+.trend1 .description{
+    padding:10px;
+    font-size:1rem;
+    font-family:sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    flex-shrink:3;
+    color:rgb(53, 53, 53);
+    
+}
+.description h3{
+    text-align: left;
+    font-size:1.6rem;
+    margin-bottom:30px;
+}
+.trend1 .description p{
+    margin-bottom:20px;
+}
+.btnBook{
+    width:200px;
+    height: 50px;
+    padding:0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background:none;
+    border:1px solid rgb(6, 88, 102);
+    position: relative;
+    overflow:hidden;
+    transition: ease-in 0.3s;
+
+}
+.btnBook:hover{
+    color: #fff;
+}
+.btnBook::before{
+    content:"";
+    position:absolute;
+    left:0;
+    width:100%;
+    height:0%;
+    background: rgb(24, 48, 49);
+    z-index:1;
+    transition: ease-in-out 0.4s;
+    top:0;
+    border-radius: 0 0 50% 50%;
+}
+.btnBook:hover::before{
+    height:180%;
+}
+.main {
+    display:flex;
+    flex-direction: row;
+   /*  background-color: red; */
+    flex-wrap:nowrap;
+    flex-grow: 0;
+    flex-shrink: 10;
+}
+.advert{
+    background-color: rgb(187, 187, 187);
+    margin-top: 9.9rem;
+    padding:3rem;
+    flex-grow:1;
+    flex-shrink: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:2rem 1rem 2rem 0;
+    border-radius: 10px;
+}
+.front-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.spacer{
+    aspect-ratio: 900/600;
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation:frontface 1s ease-in;
+    position: sticky;
+}
+.wave{
+    background-image: url('../image/svgs/poygon\ off\ white\ color.svg');
+}
+.front-header{
+    display:flex;
+}
+
+.search-box{
+    position: sticky;
+    
+    left: 90%; 
+    transform: translate(-50%,50%);
+    background: rgba(253, 253, 253, 0);
+    height: 40px;
+    border-radius: 40px;
+    padding:10px;
+
+    
+}
+.search-box:hover > .search-txt{
+    width:240px;
+    padding:0 6px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding:10px;
+}
+.search-btn{
+    color:rgb(255, 255, 255);
+    float:right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:#2f3640;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt{
+    border:none;
+    background:none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color:rgb(44, 44, 44);
+    font-size: 16px;
+    transition: 0.4s ease-in;
+    line-height: 40px;
+    width: 0px;
+}
+
+
+.front-header>h1{
+    padding-left: 60rem;
+    padding-top: 20rem;
+    font-size: 3.5rem;
+    color:rgb(65, 62, 62);
+    animation: heading 1s ease-in;
+    font-family: 'Oxygen', sans-serif;
+}
+#illhead{
+    font-size: 3.5rem;
+}
+.greycard{
+    width:5rem;
+    height:4rem;
+    color:red;
+    z-index: 1;
+}
+
+@keyframes frontface{
+    from{
+        opacity:0;
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes heading {
+    from{
+        transform: translateY(20%);
+    }
+    to{
+        
+    }
+    
+}
+
+@keyframes sidepop{
+    from{
+        transform: translateX(-100);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.Footer-container{
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    padding:3rem;
+    width:100vw;
+    height:20vh;
+    color:rgb(51, 51, 51);
+    font-family: 'Oxygen', sans-serif;
+    background-image: url('../image/svgs/side\ green\ and\ yello.svg');
+}
+
+
+@media screen and (max-width:760px) {
+    .burger{
+        display: block;
+    }
+    .body{
+        overflow-x: hidden;
+    }
+    nav{
+        height: 12vh;
+    }
+    .nav-links{
+        position: absolute;
+        display:flex;
+        flex-direction: column;
+        right:0px;
+        top:12vh;
+        align-items:center;
+        width:35%;
+        background-color:rgb(68, 152, 77,1);
+        height:100vh;
+        transform:translateX(100%);
+        transition: transform ease-in-out .4s ;
+        z-index: 1;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-active{
+        transform:translateX(0%);
+        
+    }
+    .navadd{
+        flex-direction: row;
+    }
+    .trending h1{
+        text-align: left;
+        font-size: 1.3rem;
+    }
+    .galleryContainer{
+        display:none;
+    }
+    .front-header>h1{
+        font-size: 2rem;
+        padding-left: 9rem;
+        padding-top: 9rem;
+        color: #fff;
+        background-color: rgb(83, 83, 83,.8);
+    }
+    
+    
+    @keyframes navLinkFade {
+        from{
+            opacity:0;
+            transform:translateX(50px);
+        }
+    
+        to{
+            opacity:1;
+            transform:translateX(0px);
+        }
+        
+    }
+    .trend1{
+        flex-direction: column;
+    }
+    .side-img{
+        align-self: center;
+        height: 20rem;
+        width:19rem;
+        margin:1rem;
+    }
+    .side-img:hover{
+        border-radius: 0;
+        width:23rem;
+        height: 23rem;
+        z-index: 1;
+    }
+}
+

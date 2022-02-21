@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="signupNew.css">
+		<script>
+			function backgroundSetter() {
+			  document.body.style.backgroundColor = "#f3f3f3";
+			  document.body.style.backgroundImage = "url('../../../resources/image/loginBack.jpg')";
+			}
+		</script>
+		
+		<title>signUp</title>
+	</head>
+	<body onload="backgroundSetter()">
+	
+		<div class="signUp-form">
+			<main>
+		<img src="../../../resources/image/logIcon2.png" alt="user-icon">
+		<h1>
+			Create Account
+		</h1>
+		<form action="#" id="form">  
+			<div>
+                <label for="fullN">FULL NAME</label>
+				<input id="fullN" type="fullname" class="inp-box inp-hover" placeholder="Full name">
+				<div class="error"></div>
+            </div>
+
+			<div>
+				 <label for="userN">USERNAME</label>
+				<input id="userN" type="Username" class="inp-box inp-hover" placeholder="username">
+				<div class="error"></div>
+			</div>
+               
+			<div>
+				<label for="emal">EMAIL</label>
+                <input id="emal" type="email" class="inp-box inp-hover" placeholder="Email address">
+				<div class="error"></div>
+			</div>
+
+			<div>
+				 <label for="pass" class="passwordlable">PASSWORD</label>
+                <input id="pass" class="password inp-hover" type="password" placeholder="password">  
+				<div class="error"></div>
+			</div> 
+			<br>
+
+				<div>
+					<label for="passCon" class="confirmlabel">CONFIRM</label>
+					<input id="passCon" class="confirmation inp-hover" type="password" placeholder="confirm password">
+					<div class="error"></div>
+				</div>
+                <br>
+				<p> <span><input type="checkbox"> </span> i agree to terms and privacy ?</p>
+				<button type="button" class="signUp-button" onclick="validateInputs()"><a href="#">Sign Up</a> </button>
+				<hr>
+				<p>Do you have an account ? <a href="../hikingIndex.html" class="active"><b>Sign In</b> </a></p>
+				
+
+			</main>
+		</form>
+	</div>
+	<script src="../js/validate.js"></script>
+</body>
+</html>

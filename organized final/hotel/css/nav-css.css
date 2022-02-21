@@ -1,491 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&display=swap');
 
 
 
+body{
+    font-family: Poppins;
+    background-image: linear-gradient(rgba(202, 198, 198, 0.8),rgba(172, 172, 172, 0.3)),url("../../resources/image/Hotels/sunset-sea-vector-landscape-background-lake-ocean-cloud-water-nature-morning-evening-sun-sunlight-outdoor-river-view-art-227052828.jpg")  ;
+}
 
-html {
-    scroll-behavior: smooth;
-  }
-  .checker{
-      height:300vh;
-  }
-  * {
+
+:root{
+    --orange: #ffa500;
+    --green: rgba(150, 214, 155, 0.979);
+}
+
+*{
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
-    width: auto;
-    height: auto;
-    /* font-size: 18px; */
-  }
-  
-  #red-text {
-      color: #ff5a6e;
-  }
-  
-  #title-text-separator {
-    width: 5%;
-    margin-top: 1%;
-    border: solid 1px #ff5a6e;
-  }
-  
-  .responsive-menu-link {
-    color: black;
-  }
-  
-  
-  /* ----- General Header CSS ------ */
-  
-  #header {
-    position: fixed;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: auto;
-    font-size: 19px;
-    min-height: 100px;
-    transition: all ease .9s;
-  }
-  
-  
-  
-  
-  
-  /* Normal Header */
-  
-  .active-header {
-    background-color: rgb(255, 255, 255,.9);
-    color: black;
-    transition: all ease .9s;
-  }
-  
-  .menu-link {
-    color: white;
-  }
-  
-  .active-menu-links {
-    color: black;
-  }
-  
-  #normal-header {
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    font-size: 19px;
-    min-height: 100px;
-  }
-  
-  #header-img {
-    width: 70px;
-    margin-left: 15%;
-  }
-  
-  #nav-bar {
-  }
-  
-  #nav-bar ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row;
-  }
-  
-  #nav-bar li {
-    padding: 10px;
-    margin: 12px;
-  }
-  
-  #nav-bar ul, a {
+    outline: none;
+    box-sizing: border-box;
     text-decoration: none;
-  }
-  
-  
-  
-  
-  
-  
-  /* Responsive Header */
-  
-  #responsive-header {
-    display: none;
-  }
-  
-  #image-button-black {
-    display: none;
-    border: none;
-  }
-  
-  #image-button-black:hover {
-    cursor: pointer;
-  }
-  
-  #image-button-black:focus {
-    outline: 0;
-  }
-  
-  
-  
-  
-  
-  /* ----- Hero Header CSS -----
-  
-  Tags included:
-  
-  1. hero-header - main container of the Hero
-  
-  2. hero-content - the container of the title and description within the hero Section
-  
-  3. hero-title - the title within the hero section
-  
-  4. hero-text - the text within the hero section
-  
-  5. hero-button - the button within the hero section
-  
-  */
-  
-  #hero-header {
-    /* width: 100vw; */
-    height: 100vh;
-    box-shadow: 3px 3px 2px #bebebe;
-  
-    /* hero-header flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    /* Texy style */
-    text-align: center;
-    color: white;
-  
-    /* Background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url(../resources/image/places/ETH_2015_DK_052.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  #hero-title {
-    font-size: 3.5em;
-  }
-  
-  #hero-text {
-    font-size: 1.3em;
-    margin-top: 2%;
-  }
-  
-  #hero-button {
-    border: solid 2px white;
-    background-color: inherit;
-    color: white;
-    margin-top: 6%;
-    width: 25%;
-    height: 55px;
-    font-size: 15px;
-    border-radius: 10px;
-  }
-  
-  #hero-button:hover {
-    cursor: pointer;
-  }
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* @Media min-width: 480px */
-  @media only screen and (min-width : 200px) and (max-width : 860px) {
-  
-    /* General Elements */
-  
-    #title-text-separator {
-      width: 15%;
-      margin-top: 3%;
-      margin-bottom: 3%;
-      border: solid 1px #ff5a6e;
-    }
-  
-    /* Navigation CSS */
-    #header {
-      background: white;
-      position: fixed;
-      display: flex;
-      flex-wrap: wrap;
-      flex-flow: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      min-height: 80px;
-      margin: auto;
-    }
-  
-  
-    #normal-header {
-      display: none;
-    }
-  
-    #responsive-header {
-      display: flex;
-      flex-flow: column;
-      width: 100%;
-      margin: auto;
-    }
-  
-    #responsive-logo-button {
-      display: flex;
-      justify-content: space-between;
-      padding: 1% 0 1% 0;
-    }
-  
-    #responsive-nav-bar {
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-    }
-  
-    #responsive-nav-bar ul {
-      list-style: none;
-    }
-  
-    #responsive-nav-bar li {
-      text-align: center;
-      font-size: 23px;
-      margin-top: 40%;
-    }
-  
-    #responsive-first-item {
-      margin-top: 0;
-      padding: 0;
-    }
-  
-    #header-img-black {
-      margin-left: 5%;
-      margin-top: 3%;
-      width: 50%;
-      height: auto;
-    }
-  
-    #dropdown-button-black {
-      display: block;
-      width: 55%;
-      height: auto;
-      margin: 0;
-      padding: 0;
-    }
-  
-  
-    #image-button-black {
-      border: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: inherit;
-      padding: 2%;
-    }
-  
-  
-  
-  
-    /* Hero CSS */
-  
-    #hero-header {
-      width: auto;
-      height: 120vh;
-  
-      /* hero-header flexbox */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-  
-      /* Texy style */
-      text-align: center;
-      color: white;
-  
-      /* Background image */
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../resources/image/places/ETH_2015_DK_052.jpg);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
-  
-    #hero-title {
-      font-size: 3.5em;
-    }
-  
-    #hero-text {
-      font-size: 1.3em;
-      margin-top: 2%;
-    }
-  
-    #hero-button {
-      border: solid 2px white;
-      background-color: inherit;
-      color: white;
-      margin-top: 6%;
-      width: 25%;
-      height: 55px;
-      font-size: 15px;
-      border-radius: 10px;
-    }
-  
-    #hero-button:hover {
-      cursor: pointer;
-    }
-  
-
-  
-  }
-  
-  
-
-  
-  @media only screen and (min-width : 860px) and (max-width : 1280px) {
-  
-  
-      /* Navigation CSS */
-      #header {
-        background: white;
-        position: fixed;
-        display: flex;
-        flex-wrap: wrap;
-        flex-flow: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        min-height: 80px;
-        margin: auto;
-      }
-  
-  
-      #normal-header {
-        display: none;
-      }
-  
-      #responsive-header {
-        display: flex;
-        flex-flow: column;
-        width: 100%;
-        margin: auto;
-      }
-  
-      #responsive-logo-button {
-        display: flex;
-        justify-content: space-between;
-        padding: 1% 0 1% 0;
-      }
-  
-      #responsive-nav-bar {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-      }
-  
-      #responsive-nav-bar ul {
-        list-style: none;
-      }
-  
-      #responsive-nav-bar li {
-        text-align: center;
-        font-size: 23px;
-        margin-top: 40%;
-      }
-  
-      #responsive-first-item {
-        margin-top: 0;
-        padding: 0;
-      }
-  
-      #header-img-black {
-        margin-left: 5%;
-        margin-top: 3%;
-        width: 50%;
-        height: auto;
-      }
-  
-      #dropdown-button-black {
-        display: block;
-        width: 55%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-      }
-  
-  
-      #image-button-black {
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: inherit;
-        padding: 2%;
-      }
-  
-  
-    /* Hero CSS */
-  
-    #hero-header {
-      width: auto;
-      height: 120vh;
-  
-      /* hero-header flexbox */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-  
-      /* Texy style */
-      text-align: center;
-      color: white;
-  
-      /* Background image */
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../resources/image/places/ETH_2015_DK_052.jpg);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
-  
-    #hero-title {
-      font-size: 3.5em;
-    }
-  
-    #hero-text {
-      font-size: 1.3em;
-      margin-top: 2%;
-    }
-  
-    #hero-button {
-      border: solid 2px white;
-      background-color: inherit;
-      color: white;
-      margin-top: 6%;
-      width: 25%;
-      height: 55px;
-      font-size: 15px;
-      border-radius: 10px;
-    }
-  
-    #hero-button:hover {
-      cursor: pointer;
-    }
-  
+    transition: all 0.3s linear;
 }
-  
+
+::selection{
+    background-color: var(--orange);
+    color: white;
+} 
+html{
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span{
+    font-size: 3.5rem;
+    background-color: #333;
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    /* display: inline-block; */
+}
+
+.heading span.space{
+    background: none;
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 4rem;
+    background-color: var(--green);
+    color: white;
+    width: 20%;
+    padding: 5px 2px;
+    border: 5px solid rgba(11, 112, 2, 0.795);
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background-color: #3331;
+    border: 5px solid rgba(84, 133, 79, 0.795);
+    color: var(--orange);
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+header .ComName{ 
+    font-size: 2.5rem;
+    font-weight:   bolder;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+header .ComName span{
+    color: var(--orange);
+}
+
+header .navBar a{
+    color: white;
+    font-size: 2rem;
+    margin: 0 0.8rem;
+} 
+
+header .navBar a:hover{
+    color: var(--orange);
+    text-decoration: none;
+}
+
+header .icon i{ 
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+header .icon i:hover{
+    color: var(--orange);
+} 
+
+header .search{
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+   background-color: #333;
+   border-top: 0.1rem solid rgba(255, 255, 255, .2);
+   display: flex;
+   align-items: center;
+   z-index: 1001;
+   clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+} 
+
+header .search.active{
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+}
+
+header .search #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+} 
+
+header .search label{
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+} 
+
+header .search label:hover{
+       color: var(--orange);
+}
+
+
+img.logo{
+    width: 50px;
+    height: 50px;
+}
+
+img.logo .ComName{
+    margin-left: -20px;
+}
+
+.login-form{
+    position: fixed;
+    top: -120%;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center ; 
+}
+
+.login-form.active{
+   top: 0;
+}
+
+
+
+
+.login-form form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background-color: rgba(90, 127, 129, 0.5);
+    width: 30%;
+}
+
+.login-form form h3{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--orange);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+.login-form form .box{
+    background-color: aliceblue;
+    width: 100%;
+    padding: 4px;
+    font-size: 1.7rem;
+    color: var(--orange);
+    margin: 1rem 0;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 1rem;
+}
+
+.login-form form .box:focus{
+   background-color: var(--green); 
+}
+
+
+.login-form form #remember{
+    margin: 2rem 0;
+}
+
+.login-form form label{
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.login-form form .btn{
+    display: block;
+    width: 100%;
+
+}
+
+.login-form form p{
+    padding: 5px 0;
+    font-size: 15px;
+    color: white; 
+}
+
+.login-form form p a{
+    color: var(--orange);
+}
+.login-form form p a:hover{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 3px 2px 3px 2px;
+    background-color: rgba(184, 236, 177, 0.205);
+}
+
+.login-form #form-close{ 
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+#menu_bar{
+    color: white;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+    font-size: 3rem;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
