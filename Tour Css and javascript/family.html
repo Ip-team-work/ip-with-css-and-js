@@ -9,6 +9,8 @@
     <script src = "family.js"></script>
     <link rel="stylesheet" href="tour bool.css">
     <script src = "booking.js"></script>
+    <link rel="stylesheet" href="../resources/css/all.css">
+    <link rel="stylesheet" href="../resources/css/slide.css">
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -16,32 +18,44 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </head>
 <body>
-    <div id = "Main">
-        <div class = "DivLogo">
-            <img src = "resource/images/logo.png" width ="70%" valign = "left-top" alt = "logo" >
-        </div>
-        <div class = "DivClass">
-            <ul class = "unorderList "> 
-                <a href="" class = "list"><li>Home</li></a>
-                <a href="" class = "list"><li>Flight</li></a>
-                <a href="" class = "list"><li>Hotels</li></a>
-                <a href="" class = "list"><li>Tour Packages</li></a>
-                <a href="" class = "list"><li>Holiday</li></a>
-                <a href="" class = "list"><li>About</li></a>
-                <a href="" class = "list"><li>Contact</li></a>
-            </ul>
-        </div>
+  <div id = "Main">
+    <div class = "DivLogo">
+        <img src = "resource/images/logo.png" width ="70%" valign = "left-top" alt = "logo" >
+    </div>
+<nav id="navbar">
+        <ul class="nav-links" class = "unorderList" id="menu" >
+            <a href ="" class = "list"><li>HOME</li></a>
+            <a href ="" class = "list"><li>Flight</li></a>
+            <a href ="holidayH.html" class = "list"><li>Packages</li></a>
+            <a href ="" class = "list"><li>HOTEL</li></a>
+            <a href ="family.html" class = "list"><li>Family</li></a>
+            <a href ="" class = "list"><li>ABOUT US</li></a>
+        </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+
+    <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="Type to search ">
+        <a href="#" class="search-btn">
+            <i class="fas fa-search"></i>
+        </a>
     
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <div id = "DivSecond">
-        <div id = "welcome">
-            <p>Welcome to Ethiopia</p>
-        </div>
-        <div class = "DivSearch"> 
-            <input type = "search" placeholder = "search" size = "50%">
-        </div>
-    </div>
+
+</nav>
+  </div>
+<!-- nav sidebar -->
+<div class="side-bar social">
+    
+    <a href="#"><i id="social" class=" fab fa-facebook-f"></i></a>
+    <a href="#"><i id="social" class=" fab fa-instagram"></i></a>
+    <a href="#"><i id="social" class=" fab fa-youtube"></i></a>
+    <a href="#"><i id="social" class=" fab fa-twitter"></i></a>
+</div>
+</div>
         <h2 id = "hed">Family Tour Packages</h2>
     <section class="hero-section">
         
@@ -127,5 +141,15 @@
           </a>
         <div>
       </section>
+      <div>
+      <h5>Follow us on</h5>
+      <a href="#"><i id="social" class=" fab fa-facebook-f"></i></a>
+      <a href="#"><i id="social" class=" fab fa-instagram"></i></a>
+      <a href="#"><i id="social" class=" fab fa-youtube"></i></a>
+      <a href="#"><i id="social" class=" fab fa-twitter"></i></a>
+</div>
+</footer>
+<script src="https://kit.fontawesome.com/49cca55e70.js" crossorigin="anonymous"></script>
+<script src="family.js"></script>
 </body>
 </html>
